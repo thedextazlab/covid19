@@ -15,7 +15,7 @@
     <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
   </ul>
 </div>
-<div class="scrollbutton"><button><i class="fas fa-arrow-circle-up"></i></button></div>
+<div class="scrollbutton"><span><i class="fas fa-arrow-circle-up"></i></span></div>
 <script>
   function scrollToTop() {
           window.scrollTo({top: 0, behavior: 'smooth'});
@@ -27,6 +27,9 @@ $(document).ready(function() {
     } else {
       $('.scrollbutton').fadeOut();
     }
+});
+$('.scrollbutton').click(function () {
+  scrollToTop();
 });
 });
 </script>
