@@ -3,6 +3,10 @@ title: "FAQs"
 permalink: /faq/
 author: WHO
 classes: wide
+toc: true
+toc_label: "Table of Ccontents"
+toc_icon: "list-alt"
+toc_sticky: true
 ---
 
 ## What are Coronavirus, what is COVID-19 and how is it related to SARS?
