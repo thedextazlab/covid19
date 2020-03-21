@@ -26,6 +26,7 @@
         <li><span class="cuLabel">Recovered: </span><span class="cuRecovered"></span></li>
     </ul>
     </updates>
+    <div class="loader">FETCHING DATA &nbsp; <i class="fa fa-cog fa-spin "> </div>
     <section class="cuInstructions">
     <h2>What you need to do:</h2>
     <h2 class="translated no-indent">Unachotakiwa kufanya:</h2>
@@ -74,7 +75,9 @@
                     $('.cuDead').html(data.items[0].dead);
                     $('.cuRecovered').html(data.items[0].recovered);
                     $('.cuUpdated').html(data.items[0].updated);
-                    $('updates').fadeIn();
+                    $('.loader').toggleClass("loaded").delay(500).hide();
+                    $('updates').show();
+                    $('updates').toggleClass("show");
 
             });
         }
