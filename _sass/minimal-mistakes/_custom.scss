@@ -81,3 +81,28 @@ updates subtitle {
 .cuSource {
     font-weight:bold;
 }
+.translated {
+    border-top: 1px solid rgba(0,90,0,.2);
+    font-style: italic;
+    padding-left: 40px;
+    margin: 0;
+    color: #006600;
+    font-size: smaller;
+    padding-top: 5px;
+}
+.emoji {
+    vertical-align: middle;
+    font-size: 16px;
+    height: 40px;
+    border-radius: 50px;
+    background: #eee;
+    margin-right: 8px;
+    text-align: center;
+    padding: 8px;
+    width: 40px;
+    display: inline-block;
+}
+.h-indent {
+    text-indent: -48px;
+    padding-left: 35px;
+}
