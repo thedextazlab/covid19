@@ -18,13 +18,14 @@
     <div class="initial-content">
     <div id="main" role="main" class="">
     <updates>
-    <h2><span class="covid-alert">🔔</span> #COVID-19 Updates</h2>
+    <h1><span class="covid-alert">🔔</span> #COVID-19 Updates</h1>
     <subtitle><span class="cuUpdated"></span><span class="cuSource">&nbsp;<a href="https://worldometers.info/coronavirus" target="_blank" title="worldometers.info/coronavirus">[source]</a></span></subtitle>
     <ul class="CovidUpdates">
         <li><span class="cuLabel">Total cases: </span><span class="cuCases"></span></li>
         <li><span class="cuLabel">Dead: </span><span class="cuDead"></span></li>
         <li><span class="cuLabel">Recovered: </span><span class="cuRecovered"></span></li>
     </ul>
+    <button class="cuRefresh">REFRESH</button>
     </updates>
     <h2>What you need to know:</h2>
     </div>
@@ -43,16 +44,20 @@
       </footer>
     </div>
     <script>
-        $(document).ready(function(){
-            var cases = "https://thedextazlab.herokuapp.com/users/1/web_requests/79/covid19.json";
+        var cases = "https://thedextazlab.herokuapp.com/users/1/web_requests/79/covid19.json";
+        function fetchDATA (){
             $.getJSON(cases, function(data) {
                     $('.cuCases').html(data.items[0].cases);
                     $('.cuDead').html(data.items[0].dead);
                     $('.cuRecovered').html(data.items[0].recovered);
                     $('.cuUpdated').html(data.items[0].updated);
                     $('updates').fadeIn();
+
             });
-            
+        }
+        $(document).ready(function(){
+            fetchDATA();
+            $('.cuRefresh').click(fetchDATA());
         });
     </script>
     {% include scripts.html %}
