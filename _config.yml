@@ -124,7 +124,7 @@ footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url:
+      url: "https://twitter.com/intent/user?screen_name=thedextazlab"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url:
@@ -139,7 +139,7 @@ footer:
       # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url:
+      # url: "https://instagram.com/davidkisamfu"
 
 
 # Reading Files
