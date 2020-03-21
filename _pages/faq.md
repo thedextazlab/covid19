@@ -2,7 +2,6 @@
 title: "FAQs"
 permalink: /faq/
 author: WHO
-classes: wide
 toc: true
 toc_label: "Table of Ccontents"
 toc_icon: "list-alt"
