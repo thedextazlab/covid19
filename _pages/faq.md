@@ -6,7 +6,6 @@ toc: true
 toc_label: "Table of Ccontents"
 toc_icon: "list-alt"
 toc_sticky: false
-comments: true
 share: true
 ---
 
