@@ -12,7 +12,7 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}?v={{ site.build }}">
 
 <!--[if IE]>
   <style>
@@ -31,6 +31,6 @@
 
 {% if site.head_scripts %}
   {% for script in site.head_scripts %}
-    <script src="{{ script | relative_url }}"></script>
+    <script src="{{ script | relative_url }}?v={{ site.build }}"></script>
   {% endfor %}
 {% endif %}
