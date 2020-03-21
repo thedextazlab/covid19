@@ -3,7 +3,7 @@ title: "FAQs"
 permalink: /faq/
 author: WHO
 toc: true
-toc_label: "Table of Ccontents"
+toc_label: "Contents"
 toc_icon: "list-alt"
 toc_sticky: false
 share: true
