@@ -19,7 +19,7 @@
 <script>
   function scrollToTop() {
           window.scrollTo({top: 0, behavior: 'smooth'});
-}
+    }
 $(document).ready(function() {
   $(window).scroll(function (){
     if ($(this).scrollTop()) {
@@ -27,9 +27,7 @@ $(document).ready(function() {
     } else {
       $('.scrollbutton').fadeOut();
     }
-    $('.scrollbutton').click(function () {
-      scrollToTop();
-    });
+});
 });
 </script>
 <div class="page__footer-copyright">&copy; COVID-19 Updates. {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="https://twitter.com/intent/user?screen_name=thedextazlab" rel="nofollow">@thedextazlab</a></div>
