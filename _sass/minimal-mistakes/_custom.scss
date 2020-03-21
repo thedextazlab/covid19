@@ -128,3 +128,10 @@ updates subtitle {
     opacity:0;
     transition: opacity 0.5s ease-in-out;
 }
+.scrollbutton {
+    position:fixed;
+    bottom: 10px;
+    right:10px;
+    width:60px;
+    height:60px;
+}
