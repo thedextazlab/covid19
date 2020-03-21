@@ -1,0 +1,11 @@
+WHO:
+  name      : "WHO"
+  bio       : "World Health Organization"
+  avatar    : "/assets/images/who.png"
+  links:
+      - label: "Website"
+        icon: "fas fa-fw fa-link"
+        url: "https://www.who.int"
+      - label: "Twitter"
+        icon: "fab fa-fw fa-twitter-square"
+        url: "https://twitter.com/who"

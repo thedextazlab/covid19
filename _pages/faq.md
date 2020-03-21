@@ -1,6 +1,7 @@
 ---
 title: "FAQs"
 permalink: /faq/
+author: WHO
 classes: wide
 ---
 
