@@ -8,7 +8,8 @@ toc_icon: "list-alt"
 toc_sticky: false
 ---
 
-WHO is continuously monitoring and responding to this outbreak. This page will be updated as more is known about COVID-19, how it spreads and how it is affecting people worldwide. {: .notice--info}
+WHO is continuously monitoring and responding to this outbreak. This page will be updated as more is known about COVID-19, how it spreads and how it is affecting people worldwide. 
+{: .notice--info}
 
 ## What are coronaviruses, what is COVID-19 and how is it related to SARS?
 ### What is a coronavirus?
@@ -23,9 +24,9 @@ No. The virus that causes COVID-19 and the one that caused the outbreak of Sever
 ## What are the symptoms of COVID-19?
 The most common symptoms of COVID-19 are:
 
-> 🤒 fever
-> 😴 tiredness
-> 💨 dry cough
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🤒 fever
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 😴 tiredness
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 💨 dry cough
 
 Some patients may have aches and pains, nasal congestion, runny nose, sore throat or diarrhea. 
 
@@ -166,9 +167,9 @@ The most effective ways to protect yourself and others against COVID-19 are to f
 ## Is there anything I should not do?
 The following measures ARE NOT effective against COVID-19 and can be harmful:
 
-> 🚭Smoking
-> 😷Wearing multiple masks
-> 💊Taking antibiotics
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🚭Smoking
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 😷Wearing multiple masks
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 💊Taking antibiotics
 
 In any case, if you have fever, cough and difficulty breathing seek medical care early to reduce the risk of developing a more severe infection and be sure to share your recent travel history with your health care provider.
 
