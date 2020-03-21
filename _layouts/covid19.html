@@ -4,8 +4,10 @@
 <!doctype html>
 <html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
   <head>
+    {% include analytics.html %}
     {% include head.html %}
     {% include head/custom.html %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> 
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
@@ -14,6 +16,16 @@
     {% include_cached masthead.html %}
 
     <div class="initial-content">
+    <updates>
+    <h2>Quick Updates</h2>
+    <ul class="CovidUpdates">
+        <li><span class="cuLabel">Total cases: </span><span class="cuCases"></span></li>
+        <li><span class="cuLabel">Dead: </span><span class="cuDead"></span></li>
+        <li><span class="cuLabel">Recovered: </span><span class="cuRecovered"></span></li>
+    </ul>
+    </updates>
+    <h2>What you need to know:</h2>
+    
       {{ content }}
     </div>
 
@@ -29,7 +41,15 @@
         {% include_cached footer.html %}
       </footer>
     </div>
+    <script>
+        $(document).ready(function(){
+            var cases = "https://thedextazlab.herokuapp.com/users/1/web_requests/79/covid19.json";
+            $.getJSON(cases, function(data) {
+                    
+            });
 
+        });
+    </script>
     {% include scripts.html %}
 
   </body>
