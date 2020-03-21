@@ -11,11 +11,14 @@ updates h2 {
 }
 updates subtitle {
     font-style: italic;
-    left: 50px;
+    left: 20px;
     top: -6px;
     position: relative;
     font-size: small;
     display: inline-block;
+    @include breakpoint($mobile-max) {
+        left:12px;
+    }
 }
 .CovidUpdates {
     margin: 0 auto;
@@ -41,7 +44,6 @@ updates subtitle {
     @include breakpoint($mobile-max) {
         width: 98%;
         margin:1%;
-        display:inline-block;
       }
 }
 
