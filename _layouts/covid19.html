@@ -26,29 +26,29 @@
     </updates>
     <div class="loader">FETCHING DATA &nbsp; <i class="fas fa-cog fa-spin"></i></div>
     <section class="cuInstructions">
-    <h2>What you need to do:</h2>
-    <h2 class="translated no-indent">Unachotakiwa kufanya:</h2>
+    <h2>What you need to do:</h2><span class="lang">SHOW SWAHILI</span>
+    <h2 class="translated no-indent swahili">Unachotakiwa kufanya:</h2>
     <h3 class="h-indent"><span class="emoji">🧼</span>Wash your hands frequently</h3>
-    <h3 class="translated">Nawa mikono mara kwa mara</h3>
-    <p></p>
+    <h3 class="translated swahili">Nawa mikono mara kwa mara</h3>
+    <p class="swahili"></p>
     <h3 class="h-indent"><span class="emoji">👄</span>Avoid touching your eyes, mouth and nose</h3>
-    <h3 class="translated">Usishike macho, mdomo na pua</h3>
-    <p></p>
+    <h3 class="translated swahili">Usishike macho, mdomo na pua</h3>
+    <p class="swahili"></p>
     <h3 class="h-indent"><span class="emoji">💪</span>Cover your mouth and nose with your bent elbow or tissue when you cough or sneeze</h3>
-    <h3 class="translated">Ziba mdomo wako na pua kwa mkono uliokunjwa au tishu unapokohoa au kupiga chafya</h3>
-    <p></p>
+    <h3 class="translated swahili">Ziba mdomo wako na pua kwa mkono uliokunjwa au tishu unapokohoa au kupiga chafya</h3>
+    <p class="swahili"></p>
     <h3 class="h-indent"><span class="emoji">🚷</span>Avoid crowded places</h3>
-    <h3 class="translated">Kaa mbali na sehemu zenye mikusanyiko</h3>
-    <p></p>
+    <h3 class="translated swahili">Kaa mbali na sehemu zenye mikusanyiko</h3>
+    <p class="swahili"></p>
     <h3 class="h-indent"><span class="emoji">🏠</span>Stay at home if you feel unwell - even with a slight fever and cough</h3>
-    <h3 class="translated">Kaa nyumbani kama haujisikii vizuri - hata kama una homa na kikohozi kiasi</h3>
-    <p></p>
+    <h3 class="translated swahili">Kaa nyumbani kama haujisikii vizuri - hata kama una homa na kikohozi kiasi</h3>
+    <p class="swahili"></p>
     <h3 class="h-indent"><span class="emoji">🤒</span>If you have a fever, cough and difficulty breathing, seek medical care early - but call by phone first</h3>
-    <h3 class="translated">Kama unapata homa, unakohoa na unapumua kwa shida, wahi mapema kupata huduma ya afya - lakini piga kwanza simu</h3>
-    <p></p>
+    <h3 class="translated swahili">Kama unapata homa, unakohoa na unapumua kwa shida, wahi mapema kupata huduma ya afya - lakini piga kwanza simu</h3>
+    <p class="swahili"></p>
     <h3 class="h-indent"><span class="emoji">ℹ️</span>Stay aware of the latest information from WHO and your local authorities</h3>
-    <h3 class="translated">Fuatilia taarifa mpya zinazotolewa na Shirika la Afya Duniani (WHO) na mamlaka husika karibu nawe</h3>
-    <p></p>
+    <h3 class="translated swahili">Fuatilia taarifa mpya zinazotolewa na Shirika la Afya Duniani (WHO) na mamlaka husika karibu nawe</h3>
+    <p class="swahili"></p>
     </section>
     </div>
     </div>
@@ -81,6 +81,14 @@
         }
         $(document).ready(function(){
             fetchDATA();
+            $('.lang').click(function(){
+                if($('.lang').html() == "SHOW SWAHILI"){
+                    $('.swahili').fadeIn();
+                } else {
+                    $('.swahili').fadeOut();
+                }
+
+            });
         });
     </script>
     {% include scripts.html %}
