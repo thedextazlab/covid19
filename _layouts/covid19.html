@@ -16,6 +16,8 @@
     {% include_cached masthead.html %}
 
     <div class="initial-content">
+    <div id="main" role="main" class="">
+    <article class="page wide">
     <updates>
     <h2>Quick Updates</h2>
     <ul class="CovidUpdates">
@@ -25,8 +27,8 @@
     </ul>
     </updates>
     <h2>What you need to know:</h2>
-    
-      {{ content }}
+    </article>
+    </div>
     </div>
 
     {% if site.search == true %}
