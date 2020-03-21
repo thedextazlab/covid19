@@ -22,6 +22,9 @@ updates subtitle {
     padding: 2px 0;
     width: 100%;
     display: flex;
+    @include breakpoint($small) {
+        display:grid;
+      }
 }
 .CovidUpdates li {
     border-radius: 8px;
@@ -35,6 +38,11 @@ updates subtitle {
     list-style: none;
     text-align: center;
     width: 31.33%;
+    @include breakpoint($small) {
+        width: 98%;
+        margin:1%;
+        display:inline-block;
+      }
 }
 
 .CovidUpdates li:nth-child(1) {
