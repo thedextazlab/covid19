@@ -25,7 +25,6 @@
         <li><span class="cuLabel">Dead: </span><span class="cuDead"></span></li>
         <li><span class="cuLabel">Recovered: </span><span class="cuRecovered"></span></li>
     </ul>
-    <button class="cuRefresh">REFRESH</button>
     </updates>
     <h2>What you need to know:</h2>
     </div>
@@ -57,7 +56,6 @@
         }
         $(document).ready(function(){
             fetchDATA();
-            $('.cuRefresh').click(fetchDATA());
         });
     </script>
     {% include scripts.html %}
