@@ -15,5 +15,21 @@
     <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
   </ul>
 </div>
-
+<div class="scrollbutton"><button><i class="fas fa-arrow-circle-up"></i></button></div>
+<script>
+  function scrollToTop() {
+          window.scrollTo({top: 0, behavior: 'smooth'});
+}
+$(document).ready(function() {
+  $(window).scroll(function (){
+    if ($(this).scrollTop()) {
+      $('.scrollbutton').fadeIn();
+    } else {
+      $('.scrollbutton').fadeOut();
+    }
+    $('.scrollbutton').click(function () {
+      scrollToTop();
+    });
+});
+</script>
 <div class="page__footer-copyright">&copy; COVID-19 Updates. {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="https://twitter.com/intent/user?screen_name=thedextazlab" rel="nofollow">@thedextazlab</a></div>
