@@ -4,10 +4,8 @@
 <!doctype html>
 <html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
   <head>
-    {% include analytics.html %}
     {% include head.html %}
     {% include head/custom.html %}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> 
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
