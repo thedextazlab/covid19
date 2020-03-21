@@ -4,7 +4,10 @@
 
 updates {display:none}
 updates h2 {
-    display: inline-block;
+    display: block;
+}
+updates subtitle {
+    display:block;
 }
 .CovidUpdates {
     margin: 0 auto;
@@ -53,7 +56,7 @@ updates h2 {
     font-size: xx-large;
 }
 .cuUpdated {
-    
+
 }
 .cuSource {
     font-size:smaller
