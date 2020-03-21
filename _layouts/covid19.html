@@ -24,6 +24,7 @@
         <li><span class="cuLabel">Dead: </span><span class="cuDead"></span></li>
         <li><span class="cuLabel">Recovered: </span><span class="cuRecovered"></span></li>
     </ul>
+    <span class="cuUpdated"></span>
     </updates>
     <h2>What you need to know:</h2>
     </div>
@@ -45,9 +46,13 @@
         $(document).ready(function(){
             var cases = "https://thedextazlab.herokuapp.com/users/1/web_requests/79/covid19.json";
             $.getJSON(cases, function(data) {
-                    
+                    $('.cuCases').html(data.items[0].cases);
+                    $('.cuDead').html(data.items[0].dead);
+                    $('.cuRecovered').html(data.items[0].recovered);
+                    $('.cuUpdated').html(data.items[0].updated);
+                    $('updates').fadeIn();
             });
-
+            
         });
     </script>
     {% include scripts.html %}
