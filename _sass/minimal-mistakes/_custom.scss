@@ -22,7 +22,7 @@ updates subtitle {
     padding: 2px 0;
     width: 100%;
     display: flex;
-    @include breakpoint($small) {
+    @include breakpoint($mobile-max) {
         display:grid;
       }
 }
@@ -38,7 +38,7 @@ updates subtitle {
     list-style: none;
     text-align: center;
     width: 31.33%;
-    @include breakpoint($small) {
+    @include breakpoint($mobile-max) {
         width: 98%;
         margin:1%;
         display:inline-block;
