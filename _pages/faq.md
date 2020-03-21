@@ -6,6 +6,8 @@ toc: true
 toc_label: "Table of Ccontents"
 toc_icon: "list-alt"
 toc_sticky: false
+comments: true
+share: true
 ---
 
 WHO is continuously monitoring and responding to this outbreak. This page will be updated as more is known about COVID-19, how it spreads and how it is affecting people worldwide. 
