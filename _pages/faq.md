@@ -5,7 +5,7 @@ author: WHO
 toc: true
 toc_label: "Table of Ccontents"
 toc_icon: "list-alt"
-toc_sticky: true
+toc_sticky: false
 ---
 
 WHO is continuously monitoring and responding to this outbreak. This page will be updated as more is known about COVID-19, how it spreads and how it is affecting people worldwide. {: .notice--info}
@@ -22,9 +22,10 @@ No. The virus that causes COVID-19 and the one that caused the outbreak of Sever
 
 ## What are the symptoms of COVID-19?
 The most common symptoms of COVID-19 are:
-    🤒 fever
-    😴 tiredness
-    💨 dry cough
+
+> 🤒 fever
+> 😴 tiredness
+> 💨 dry cough
 
 Some patients may have aches and pains, nasal congestion, runny nose, sore throat or diarrhea. 
 
@@ -165,9 +166,9 @@ The most effective ways to protect yourself and others against COVID-19 are to f
 ## Is there anything I should not do?
 The following measures ARE NOT effective against COVID-19 and can be harmful:
 
-    🚭Smoking
-    😷Wearing multiple masks
-    💊Taking antibiotics
+> 🚭Smoking
+> 😷Wearing multiple masks
+> 💊Taking antibiotics
 
 In any case, if you have fever, cough and difficulty breathing seek medical care early to reduce the risk of developing a more severe infection and be sure to share your recent travel history with your health care provider.
 
