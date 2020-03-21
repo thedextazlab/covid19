@@ -161,4 +161,10 @@ updates subtitle {
 .swahili {display:none;}
 .lang {
     float:right;
+    padding:2px 8px;
+    border-radius:8px;
+    background: #555;
+    color:#fff;
+    cursor:pointer;
 }
+.lang:hover {background: #666}
