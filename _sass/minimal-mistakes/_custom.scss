@@ -160,8 +160,10 @@ updates subtitle {
 }
 .swahili {display:none;}
 .lang {
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto;
     font-size: smaller;
-    float: right;
     padding: 2px 8px 4px 8px;
     border-radius: 6px;
     background: #555;
@@ -170,3 +172,7 @@ updates subtitle {
     font-weight: normal;
 }
 .lang:hover {background: #777}
+.toggleLang {
+    padding-top: 30px;
+    display: flex;
+}
