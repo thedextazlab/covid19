@@ -69,7 +69,7 @@
     <script>
         var cases = "https://thedextazlab.herokuapp.com/users/1/web_requests/79/covid19.json";
         function fetchDATA (){
-            $('updates').fadeOut(200).removeClass("show", function() {
+            $('updates').removeClass("show").fadeOut(200, function() {
                 $('.loader').removeClass("loaded").fadeIn(200);
             });
             $.getJSON(cases, function(data) {
