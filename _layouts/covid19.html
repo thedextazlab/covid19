@@ -69,15 +69,17 @@
     <script>
         var cases = "https://thedextazlab.herokuapp.com/users/1/web_requests/79/covid19.json";
         function fetchDATA (){
-            $('updates').fadeOut();
+            $('updates').fadeOut(200);
+            $('updates').removeClass("show");
+            $('.loader').removeClass("loaded").show();
             $.getJSON(cases, function(data) {
                     $('.cuCases').html(data.items[0].cases);
                     $('.cuDead').html(data.items[0].dead);
                     $('.cuRecovered').html(data.items[0].recovered);
                     $('.cuUpdated').html(data.items[0].updated);
-                    $('.loader').toggleClass("loaded").fadeOut();
-                    $('updates').fadeIn();
-                    $('updates').toggleClass("show");
+                    $('.loader').addClass("loaded").hide();
+                    $('updates').fadeIn(500);
+                    $('updates').addClass("show");
 
             });
         }
