@@ -69,27 +69,20 @@
     <script>
         var cases = "https://thedextazlab.herokuapp.com/users/1/web_requests/79/covid19.json";
         function fetchDATA (){
-            window.setTimeout(function() {
-                $('updates').hide();
-                $('.loader').removeClass("loaded");
-            }, 1000);
-            $('updates').removeClass("show");
-            $('.loader').show();
+            $('updates').fadeOut();
             $.getJSON(cases, function(data) {
                     $('.cuCases').html(data.items[0].cases);
                     $('.cuDead').html(data.items[0].dead);
                     $('.cuRecovered').html(data.items[0].recovered);
                     $('.cuUpdated').html(data.items[0].updated);
-                    $('.loader').addClass("loaded");
-                    $('updates').show();
-                    window.setTimeout(function() {
-                        $('updates').addClass("show");
-                        $('.loader').hide();
-                    }, 1000);      
+                    $('.loader').toggleClass("loaded").fadeOut();
+                    $('updates').fadeIn();
+                    $('updates').toggleClass("show");
+
             });
         }
-        function switchLang(sw) {
-            if (sw == true) {
+        function switchLang(bool) {
+            if (bool == true) {
                 $('.CovidUpdates > li:nth-child(1) .cuLabel').html("JUMLA YA WAGONJWA:");
                 $('.CovidUpdates > li:nth-child(2) .cuLabel').html("WALIOKUFA:");
                 $('.CovidUpdates > li:nth-child(3) .cuLabel').html("WALIOPONA:");
