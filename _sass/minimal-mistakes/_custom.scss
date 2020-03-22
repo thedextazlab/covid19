@@ -182,3 +182,11 @@ updates subtitle {
     padding-top: 30px;
     display: flex;
 }
+.refresher {
+    cursor: pointer;
+    font-size: 10px;
+    float: right;
+}
+    .refresher:hover {
+        color: #777;
+}
