@@ -71,9 +71,10 @@
         function fetchDATA (){
             window.setTimeout(function() {
                 $('updates').hide();
+                $('.loader').removeClass("loaded");
             }, 1000);
             $('updates').removeClass("show");
-            $('.loader').removeClass("loaded");
+            $('.loader').show();
             $.getJSON(cases, function(data) {
                     $('.cuCases').html(data.items[0].cases);
                     $('.cuDead').html(data.items[0].dead);
@@ -83,6 +84,7 @@
                     $('updates').show();
                     window.setTimeout(function() {
                         $('updates').addClass("show");
+                        $('.loader').hide();
                     }, 1000);      
             });
         }
