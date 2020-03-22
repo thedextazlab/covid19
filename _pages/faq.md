@@ -187,7 +187,7 @@ In any case, if you have fever, cough and difficulty breathing seek medical care
 
 ⭐ Draw on skills you have used in the past that have helped you to manage previous life’s adversities and use those skills to help you manage your emotions during the challenging time of this outbreak.
 
-[Download PDF on Coping with Stress](/assets/docs/coping-with-stress.pdf){: .btn .btn--primary}
+[PDF: Coping with Stress](/assets/docs/coping-with-stress.pdf){: .btn .btn--primary}
 
 
 ## How do I help children cope with stress during COVID-19?
@@ -201,4 +201,4 @@ In any case, if you have fever, cough and difficulty breathing seek medical care
 
 ℹ Provide facts about what has happened, explain what is going on now and give them clear information about how to reduce their risk of being infected by the disease in words that they can understand depending on their age. This also includes providing information about what could happen in a re-assuring way (e.g. a family member and/or the child may start not feeling well and may have to go to the hospital for some time so doctors can help them feel better).
 
-[Download PDF on Helping Childredn Coping with Stress](/assets/docs/helping-children-cope-with-stress-print.pdf){: .btn .btn--primary}
+[PDF: Helping Children Cope with Stress](/assets/docs/helping-children-cope-with-stress-print.pdf){: .btn .btn--primary}
