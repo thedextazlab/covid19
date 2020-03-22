@@ -52,6 +52,9 @@ updates subtitle {
         margin:1%;
       }
 }
+.CovidUpdates li:hover {
+    opacity: .9;
+}
 
 .CovidUpdates li:nth-child(1) {
     color: #fff;
