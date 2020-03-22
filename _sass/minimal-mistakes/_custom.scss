@@ -121,6 +121,8 @@ updates subtitle {
     display: block;
     text-align: center;
     padding: 24px 0px;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
 }
 .show {
     opacity: 1;
