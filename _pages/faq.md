@@ -202,3 +202,5 @@ In any case, if you have fever, cough and difficulty breathing seek medical care
 ℹ Provide facts about what has happened, explain what is going on now and give them clear information about how to reduce their risk of being infected by the disease in words that they can understand depending on their age. This also includes providing information about what could happen in a re-assuring way (e.g. a family member and/or the child may start not feeling well and may have to go to the hospital for some time so doctors can help them feel better).
 
 [PDF: Helping Children Cope with Stress](/assets/docs/helping-children-cope-with-stress-print.pdf){: .btn .btn--primary}
+
+Source: [WHO](https://www.who.int/news-room/q-a-detail/q-a-coronaviruses)
