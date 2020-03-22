@@ -25,7 +25,7 @@
     </ul>
     </updates>
     <div class="loader">FETCHING DATA &nbsp; <i class="fas fa-cog fa-spin"></i></div>
-    <div class="toggleLang"><span class="lang">SHOW IN SWAHILI</span></div>
+    <div class="toggleLang"><span class="lang">KISWAHILI</span></div>
     <section class="cuInstructions">
     <h2 class="english">What you need to do:</h2>
     <h2 class="swahili">Unachotakiwa kufanya:</h2>
@@ -94,15 +94,15 @@
         $(document).ready(function(){
             fetchDATA();
             $('.lang').click(function(){
-                if($('.lang').html() == "SHOW IN SWAHILI"){
+                if($('.lang').html() == "KISWAHILI"){
                     $('.swahili').delay(500).fadeIn();
                     $('.english').fadeOut();
-                    $('.lang').html("ONESHA KIINGEREZA");
+                    $('.lang').html("ENGLISH");
                     switchLang(true);
                 } else {
                     $('.swahili').fadeOut();
                     $('.english').delay(500).fadeIn();
-                    $('.lang').html("SHOW IN SWAHILI");
+                    $('.lang').html("KISWAHILI");
                     switchLang(false);                   
                 }
 
