@@ -95,13 +95,13 @@
             fetchDATA();
             $('.lang').click(function(){
                 if($('.lang').html() == "SHOW IN SWAHILI"){
-                    $('.swahili').fadeIn();
+                    $('.swahili').delay(500).fadeIn();
                     $('.english').fadeOut();
                     $('.lang').html("ONESHA KIINGEREZA");
                     switchLang(true);
                 } else {
                     $('.swahili').fadeOut();
-                    $('.english').fadeIn();
+                    $('.english').delay(500).fadeIn();
                     $('.lang').html("SHOW IN SWAHILI");
                     switchLang(false);                   
                 }
