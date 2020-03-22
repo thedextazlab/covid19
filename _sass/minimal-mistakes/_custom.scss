@@ -160,12 +160,13 @@ updates subtitle {
 }
 .swahili {display:none;}
 .lang {
-    float:right;
-    padding:2px 8px;
-    border-radius:8px;
+    font-size: smaller;
+    float: right;
+    padding: 2px 8px 4px 8px;
+    border-radius: 6px;
     background: #555;
-    color:#fff;
-    cursor:pointer;
-    font-weight: 100;
+    color: #fff;
+    cursor: pointer;
+    font-weight: normal;
 }
 .lang:hover {background: #666}

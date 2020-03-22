@@ -79,14 +79,27 @@
 
             });
         }
+        function switchLang(bool) {
+            if (bool == true) {
+                $('.CovidUpdates > li:nth-child(1) .cuLabel').html("JUMLA YA WAGONJWA:");
+                $('.CovidUpdates > li:nth-child(2) .cuLabel').html("WALIOKUFA:");
+                $('.CovidUpdates > li:nth-child(3) .cuLabel').html("WALIOPONA:");
+            } else {
+                $('.CovidUpdates > li:nth-child(1) .cuLabel').html("TOTAL CASES:");
+                $('.CovidUpdates > li:nth-child(2) .cuLabel').html("DEAD:");
+                $('.CovidUpdates > li:nth-child(3) .cuLabel').html("RECOVERED:");
+            }
+        }
         $(document).ready(function(){
             fetchDATA();
             $('.lang').click(function(){
                 if($('.lang').html() == "SHOW SWAHILI"){
                     $('.swahili').fadeIn();
+                    $('.lang').html("HIDE SWAHILI");
+                    switchLang(true);
                 } else {
                     $('.swahili').fadeOut();
-                    $('.lang').html("HIDE SWAHILI");
+                    switchLang(false);                   
                 }
 
             });
