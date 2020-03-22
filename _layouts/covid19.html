@@ -17,8 +17,7 @@
     <div id="main" role="main" class="">
     <updates>
     <h1><span class="covid-alert">🔔</span>&nbsp;
-        <span class="english">COVID-19 Updates</span>
-        <span class="swahili">Taarifa za COVID-19</span>
+        <span class="cuTitle">COVID-19 Updates</span>
         <span class="refresher">
         <i class="fa-stack fa-2x">
         <i class="fas fa-circle fa-stack-2x"></i>
@@ -97,10 +96,12 @@
                 $('.CovidUpdates > li:nth-child(1) .cuLabel').html("JUMLA YA WAGONJWA:");
                 $('.CovidUpdates > li:nth-child(2) .cuLabel').html("WALIOKUFA:");
                 $('.CovidUpdates > li:nth-child(3) .cuLabel').html("WALIOPONA:");
+                $('.cuTitle').html("Taarifa za COVID-19");
             } else {
                 $('.CovidUpdates > li:nth-child(1) .cuLabel').html("TOTAL CASES:");
                 $('.CovidUpdates > li:nth-child(2) .cuLabel').html("DEAD:");
                 $('.CovidUpdates > li:nth-child(3) .cuLabel').html("RECOVERED:");
+                $('.cuTitle').html("COVID-19 Updates");
             }
         }
         $(document).ready(function(){
