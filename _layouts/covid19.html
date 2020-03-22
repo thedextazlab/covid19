@@ -95,13 +95,13 @@
             fetchDATA();
             $('.lang').click(function(){
                 if($('.lang').html() == "KISWAHILI"){
-                    $('.swahili').delay(500).fadeIn();
-                    $('.english').fadeOut();
+                    $('.swahili').show();
+                    $('.english').hide();
                     $('.lang').html("ENGLISH");
                     switchLang(true);
                 } else {
-                    $('.swahili').fadeOut();
-                    $('.english').delay(500).fadeIn();
+                    $('.swahili').hide();
+                    $('.english').show();
                     $('.lang').html("KISWAHILI");
                     switchLang(false);                   
                 }
