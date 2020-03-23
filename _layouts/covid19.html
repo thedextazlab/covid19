@@ -34,10 +34,10 @@
         <li><span class="cuLabel">Dead: </span><span class="cuDead"></span></li>
         <li><span class="cuLabel">Recovered: </span><span class="cuRecovered"></span></li>
     </ul>
-    <note class="english"><strong>NOTE:</strong>These are totals of all COVID-19 cases globally</note>
-    <note class="swahili"><strong>NOTE:</strong>Hii ni jumla ya wagonjwa wote wa COVID-19 duniani</note>
+    <note class="english"><strong>NOTE: </strong>These are totals of all COVID-19 cases globally</note>
+    <note class="swahili"><strong>MUHIMU: </strong>Hii ni jumla ya wagonjwa wote wa COVID-19 duniani</note>
     </updates>
-    <div class="loader">FETCHING DATA &nbsp; <i class="fas fa-cog fa-spin"></i></div>
+    <div class="loader"><span>FETCHING DATA</span> &nbsp; <i class="fas fa-cog fa-spin"></i></div>
     <section class="cuInstructions">
     <h1 class="english">What you need to do:</h1>
     <h1 class="swahili">Unachotakiwa kufanya:</h1>
@@ -130,7 +130,10 @@
                     switchLang(true);
                 }
             });
-            $('.refresher').click(function() {fetchDATA();});
+            $('.refresher').click(function() {
+                $('.loader span').html("UPDATING");
+                fetchDATA();    
+                });
         });
     </script>
     {% include scripts.html %}
