@@ -11,11 +11,10 @@ layout: single_wide
 excerpt: Important COVID-19 Resources
 ---
 
-## Resources
 Resources on this page will be updated regularly. Keep checking back.
 {: .notice--info}
 
-### Important Links
+## Important Links
 
 1.  WHO: [COVID-19 Portal](https://www.who.int/emergencies/diseases/novel-coronavirus-2019)
 
