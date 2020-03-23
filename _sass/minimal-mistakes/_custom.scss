@@ -169,11 +169,19 @@ body {
     } 
 }
 .greedy-nav .visible-links {
-    display: none;
+    height:0px;
+    opacity:0;
+    transition: opacity 0.5s ease-in-out;
+}
+.nav-fadeIn {
+    height: unset;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
 }
 .greedy-nav .hidden-links a {
     color: #222!important;
 }
+.navicon:before, .navicon:after, .navicon {background:#eee}
 
 .cuInstructions p {
     padding-left: 60px;
