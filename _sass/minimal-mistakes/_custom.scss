@@ -158,32 +158,31 @@ updates subtitle {
     padding-left: 60px;
 }
 .swahili {display:none;}
+.toggles {
+    display: flex;
+    border-radius: 28px;
+    padding: 4px 0px 4px 12px;
+    background: #ccc;
+    float: right;
+}
 .lang {
-    border-bottom: 4px solid #333;
+    vertical-align: top;
+    display: grid;
+    padding: 4px 4px 2px 4px;
     text-align: center;
-    display: inline-block;
-    margin: 0 auto;
-    font-size: larger;
-    padding: 2px 14px 4px 14px;
-    border-radius: 6px;
-    background: #555;
+    font-size: .5em;
     color: #fff;
     cursor: pointer;
     font-weight: normal;
 }
-.lang:hover {background: #777}
-.toggleLang {
-    padding-top: 30px;
-    display: flex;
-}
 .refresher {
     cursor: pointer;
-    font-size: 10px;
-    float: right;
+    font-size: .25em;
 }
     .refresher:hover {
         color: #777;
 }
+
 .cuInstructions {
     display:none;
 }

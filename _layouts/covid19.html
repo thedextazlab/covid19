@@ -6,6 +6,7 @@
   <head>
     {% include head.html %}
     {% include head/custom.html %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/css/flag-icon.min.css" integrity="sha256-YjcCvXkdRVOucibC9I4mBS41lXPrWfqY2BnpskhZPnw=" crossorigin="anonymous" />
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
@@ -17,7 +18,7 @@
     <div id="main" role="main" class="">
     <updates>
     <h1><span class="cuTitle">COVID-19 Updates</span>
-        <span class="refresher">
+        <span class="toggles"><span class="lang"><span class="flag-icon flag-icon-tz flag-icon-squared"></span></span><span class="refresher"></span>
         <i class="fa-stack fa-2x">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fas fa-sync fa-stack-1x fa-inverse"></i></i>
@@ -33,7 +34,6 @@
     <note class="swahili"><strong>NOTE:</strong>Hii ni jumla ya wagonjwa wote wa COVID-19 duniani</note>
     </updates>
     <div class="loader">FETCHING DATA &nbsp; <i class="fas fa-cog fa-spin"></i></div>
-    <div class="toggleLang"><span class="lang">KISWAHILI</span></div>
     <section class="cuInstructions">
     <h1 class="english">What you need to do:</h1>
     <h1 class="swahili">Unachotakiwa kufanya:</h1>
@@ -112,16 +112,16 @@
             }
             $('.cuInstructions').fadeIn();
             $('.lang').click(function(){
-                if($('.lang').html() == "KISWAHILI"){
+                if($('.lang').html() == '<span class="flag-icon flag-icon-tz flag-icon-squared"></span>'){
                     $('.swahili').show();
                     $('.english').hide();
-                    $('.lang').html("ENGLISH");
+                    $('.lang').html('<span class="flag-icon flag-icon-us flag-icon-squared"></span>');
                     Cookies.set('site_lang', 'swahili', { expires: 365 });
                     switchLang(true);
                 } else {
                     $('.swahili').hide();
                     $('.english').show();
-                    $('.lang').html("KISWAHILI");
+                    $('.lang').html('<span class="flag-icon flag-icon-tz flag-icon-squared"></span>');
                     Cookies.set('site_lang', 'english', { expires: 365 });
                     switchLang(false);                   
                 }
