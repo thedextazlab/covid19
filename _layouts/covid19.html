@@ -18,7 +18,11 @@
     <div id="main" role="main" class="">
     <updates>
     <h1><span class="cuTitle">COVID-19 Updates</span>
-        <span class="toggles"><span class="lang"><span class="flag-icon flag-icon-tz flag-icon-squared"></span></span><span class="refresher"></span>
+        <span class="toggles">
+        <span class="lang">
+            <span class="flag-icon flag-icon-tz flag-icon-squared"></span>
+        </span>
+        <span class="refresher">
         <i class="fa-stack fa-2x">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fas fa-sync fa-stack-1x fa-inverse"></i></i>
@@ -98,11 +102,17 @@
                 $('.CovidUpdates > li:nth-child(2) .cuLabel').html("WALIOKUFA:");
                 $('.CovidUpdates > li:nth-child(3) .cuLabel').html("WALIOPONA:");
                 $('.cuTitle').html("Taarifa za COVID-19");
+                $('.swahili').show();
+                $('.english').hide();
+                $('.lang').html('<span class="flag-icon flag-icon-us flag-icon-squared"></span>');
             } else {
                 $('.CovidUpdates > li:nth-child(1) .cuLabel').html("TOTAL CASES:");
                 $('.CovidUpdates > li:nth-child(2) .cuLabel').html("DEAD:");
                 $('.CovidUpdates > li:nth-child(3) .cuLabel').html("RECOVERED:");
                 $('.cuTitle').html("COVID-19 Updates");
+                $('.swahili').hide();
+                $('.english').show();
+                $('.lang').html('<span class="flag-icon flag-icon-tz flag-icon-squared"></span>');
             }
         }
         $(document).ready(function(){
@@ -113,15 +123,9 @@
             $('.cuInstructions').fadeIn();
             $('.lang').click(function(){
                 if($('.lang').html() == '<span class="flag-icon flag-icon-tz flag-icon-squared"></span>'){
-                    $('.swahili').show();
-                    $('.english').hide();
-                    $('.lang').html('<span class="flag-icon flag-icon-us flag-icon-squared"></span>');
                     Cookies.set('site_lang', 'swahili', { expires: 365 });
                     switchLang(true);
                 } else {
-                    $('.swahili').hide();
-                    $('.english').show();
-                    $('.lang').html('<span class="flag-icon flag-icon-tz flag-icon-squared"></span>');
                     Cookies.set('site_lang', 'english', { expires: 365 });
                     switchLang(false);                   
                 }
