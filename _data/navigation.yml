@@ -1,5 +1,7 @@
 # main links
 main:
+- title: "Charts"
+  url: /charts/
 - title: "Resources"
   url: /resources/
 - title: "FAQs"
