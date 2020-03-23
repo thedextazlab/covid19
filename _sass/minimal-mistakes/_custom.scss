@@ -174,8 +174,8 @@ body {
     transition: opacity 0.5s ease-in-out;
 }
 .nav-fadeIn {
-    height: unset;
-    opacity: 1;
+    height: unset!important;
+    opacity: 1!important;
     transition: opacity 0.5s ease-in-out;
 }
 .greedy-nav .hidden-links a {
