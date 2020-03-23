@@ -184,9 +184,19 @@ updates subtitle {
     .refresher:hover {
         color: #777;
 }
+.cuInstructions {
+    display:none;
+}
 .cuInstructions h1 {
     padding-top: 20px;
 }
 .wide-single {
     width: 100%;
+}
+updates note {
+    color: #555;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 8px;
+    display: block;
 }
