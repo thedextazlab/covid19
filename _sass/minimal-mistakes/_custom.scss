@@ -168,6 +168,12 @@ body {
         width: 100%;
     } 
 }
+.greedy-nav .visible-links {
+    display: none;
+}
+.greedy-nav .hidden-links a {
+    color: #222!important;
+}
 
 .cuInstructions p {
     padding-left: 60px;

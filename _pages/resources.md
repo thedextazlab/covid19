@@ -5,7 +5,7 @@ toc: true
 toc_label: "Contents"
 toc_icon: "file-alt"
 toc_sticky: true
-comments: true
+comments: false
 related: false
 layout: single_wide
 excerpt: Important COVID-19 Resources

@@ -21,6 +21,9 @@
           window.scrollTo({top: 0, behavior: 'smooth'});
     }
 $(document).ready(function() {
+
+  $('.greedy-nav .visible-links').fadeIn();
+
   $(window).scroll(function (){
     if ($(this).scrollTop()) {
       $('.scrollbutton').fadeIn();
