@@ -7,6 +7,15 @@
     {% include head.html %}
     {% include head/custom.html %}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/css/flag-icon.min.css" integrity="sha256-YjcCvXkdRVOucibC9I4mBS41lXPrWfqY2BnpskhZPnw=" crossorigin="anonymous" />
+  <script>
+      if(Cookies.get('darkmode') == "true") {
+                    $('.darkswitch-toggle').removeClass("fa-moon").addClass("fa-sun");
+                    $('body, #footer').addClass("darkmode");
+            } else {
+                    $('.darkswitch-toggle').removeClass("fa-sun").addClass("fa-moon");
+                    $('body, #footer').removeClass("darkmode");
+        }
+  </script>
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
@@ -19,13 +28,19 @@
     <updates>
     <h1><span class="cuTitle">COVID-19 Updates</span>
         <span class="toggles">
-        <span class="lang">
-            <span class="flag-icon-background flag-icon-tz flag-icon-squared"></span>
-        </span>
-        <span class="refresher">
-        <i class="fa-stack fa-2x">
-        <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fas fa-sync fa-stack-1x fa-inverse spinner"></i></i>
+            <span class="darkswitch">
+                <i class="fa-stack fa-2x">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fas fa-moon fa-stack-1x fa-inverse darkswitch-toggle"></i></i>
+            </span>
+            <span class="lang">
+                <span class="flag-icon-background flag-icon-tz flag-icon-squared"></span>
+             </span>
+            <span class="refresher">
+                <i class="fa-stack fa-2x">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fas fa-sync fa-stack-1x fa-inverse spinner"></i></i>
+            </span>
         </span>
     </h1>
     <subtitle><span class="cuUpdated"></span><span class="cuSource">&nbsp;<a href="https://worldometers.info/coronavirus" target="_blank" title="worldometers.info/coronavirus">[source]</a></span></subtitle>
@@ -146,7 +161,18 @@
             $('.refresher').click(function() {
                 $('.loader span').html("UPDATING");
                 fetchDATA();    
-                });
+            });
+            $('.darkswitch').click(function() {
+                if($('.darkswitch-toggle').hasClass("fa-moon")) {
+                    $('.darkswitch-toggle').removeClass("fa-moon").addClass("fa-sun");
+                    $('body, #footer').addClass("darkmode");
+                    Cookies.set('darkmode', 'true', { expires: 365 });
+                } else {
+                    $('.darkswitch-toggle').removeClass("fa-sun").addClass("fa-moon");
+                    $('body, #footer').removeClass("darkmode");
+                    Cookies.set('darkmode', 'false', { expires: 365 });
+                }
+            });
         });
     </script>
     {% include scripts.html %}
