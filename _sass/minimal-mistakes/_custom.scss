@@ -165,6 +165,7 @@ body {
     @include breakpoint($mobile-max) {
         top: 64px;
         position: absolute;
+        width: 100%;
     } 
 }
 
