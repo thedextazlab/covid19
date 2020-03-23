@@ -163,7 +163,9 @@ updates subtitle {
 }
 body {
     @include breakpoint($mobile-max) {
-            margin-top: 64px;
+        display: block;
+        top: 64px;
+        position: absolute;
     } 
 }
 
