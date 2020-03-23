@@ -20,7 +20,7 @@
     <h1><span class="cuTitle">COVID-19 Updates</span>
         <span class="toggles">
         <span class="lang">
-            <span class="flag-icon flag-icon-tz flag-icon-squared"></span>
+            <span class="flag-icon-background flag-icon-tz flag-icon-squared"></span>
         </span>
         <span class="refresher">
         <i class="fa-stack fa-2x">
@@ -90,7 +90,7 @@
                     $('.cuRecovered').html(data.items[0].recovered);
                     $('.cuUpdated').html(data.items[0].updated);
                     $('.loader').addClass("loaded").fadeOut(200, function() {
-                        $('updates').fadeIn(500).addClass("show");
+                    $('updates').fadeIn(500).addClass("show");
                     });
                     
 
@@ -104,7 +104,7 @@
                 $('.cuTitle').html("Taarifa za COVID-19");
                 $('.swahili').show();
                 $('.english').hide();
-                $('.lang').html('<span class="flag-icon flag-icon-us flag-icon-squared"></span>');
+                $('.lang').html('<span class="flag-icon-background flag-icon-us flag-icon-squared"></span>');
             } else {
                 $('.CovidUpdates > li:nth-child(1) .cuLabel').html("TOTAL CASES:");
                 $('.CovidUpdates > li:nth-child(2) .cuLabel').html("DEAD:");
@@ -112,7 +112,7 @@
                 $('.cuTitle').html("COVID-19 Updates");
                 $('.swahili').hide();
                 $('.english').show();
-                $('.lang').html('<span class="flag-icon flag-icon-tz flag-icon-squared"></span>');
+                $('.lang').html('<span class="flag-icon-background flag-icon-tz flag-icon-squared"></span>');
             }
         }
         $(document).ready(function(){
@@ -122,14 +122,13 @@
             }
             $('.cuInstructions').fadeIn();
             $('.lang').click(function(){
-                if($('.lang').html() == '<span class="flag-icon flag-icon-tz flag-icon-squared"></span>'){
+                if(Cookies.get('site_lang') == "swahili") {
+                    Cookies.set('site_lang', 'english', { expires: 365 });
+                    switchLang(false);
+                } else {
                     Cookies.set('site_lang', 'swahili', { expires: 365 });
                     switchLang(true);
-                } else {
-                    Cookies.set('site_lang', 'english', { expires: 365 });
-                    switchLang(false);                   
                 }
-
             });
             $('.refresher').click(function() {fetchDATA();});
         });
