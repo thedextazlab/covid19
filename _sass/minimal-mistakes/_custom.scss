@@ -182,7 +182,9 @@ body {
     color: #222!important;
 }
 .navicon:before, .navicon:after, .navicon {background:#eee}
-
+.greedy-nav__toggle:hover .navicon, .greedy-nav__toggle:hover .navicon:before, .greedy-nav__toggle:hover .navicon:after {
+    background: #aaa;
+}
 .cuInstructions p {
     padding-left: 60px;
 }
