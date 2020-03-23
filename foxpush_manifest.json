@@ -1,37 +1,5 @@
 {
   "display": "standalone",
   "gcm_sender_id": "144720809734",
-  "gcm_user_visible_only": true,
-  "short_name": "COVID-19",
-   "name": "COVID-19 Updates",
-    "theme_color": "#000",
-    "background_color": "#fff",
-    "icons": [
-      {
-        "src": "assets/icons/launcher-icon-1x.png",
-        "type": "image/png",
-        "sizes": "48x48"
-      },
-      {
-        "src": "assets/icons/launcher-icon-2x.png",
-        "type": "image/png",
-        "sizes": "96x96"
-      },
-      {
-        "src": "assets/icons/launcher-icon-3x.png",
-        "type": "image/png",
-        "sizes": "144x144"
-      },
-      {
-        "src": "assets/icons/launcher-icon-4x.png",
-        "type": "image/png",
-        "sizes": "192x192"
-      },
-      {
-        "src": "assets/icons/launcher-hires.png",
-        "type": "image/png",
-        "sizes": "512x512"
-      }
-    ],
-    "start_url": "/?utm_source=launcher"
+  "gcm_user_visible_only": true
 }
