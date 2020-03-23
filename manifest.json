@@ -3,7 +3,7 @@
     "name": "COVID-19 Updates",
     "theme_color": "#222",
     "background_color": "#fff",
-    "display": "standalone",
+    "display": "fullscreen",
     "icons": [
       {
         "src": "assets/icons/launcher-icon-1x.png",
@@ -24,6 +24,11 @@
         "src": "assets/icons/launcher-icon-4x.png",
         "type": "image/png",
         "sizes": "192x192"
+      },
+      {
+        "src": "assets/icons/launcher-hires.png",
+        "type": "image/png",
+        "sizes": "512x512"
       }
     ],
     "start_url": "/?utm_source=launcher"
