@@ -3,7 +3,7 @@
     "name": "COVID-19 Updates",
     "theme_color": "#222",
     "background_color": "#fff",
-    "display": "standalone",
+    "display": "fullscreen",
     "icons": [
       {
         "src": "assets/icons/launcher-icon-1x.png",
