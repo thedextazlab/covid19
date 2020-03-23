@@ -1,5 +1,7 @@
 # main links
 main:
+- title: "Resources"
+  url: /resources/
 - title: "FAQs"
   url: /faq/
   # - title: "Quick-Start Guide"
