@@ -25,7 +25,7 @@
         <span class="refresher">
         <i class="fa-stack fa-2x">
         <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fas fa-sync fa-stack-1x fa-inverse"></i></i>
+        <i class="fas fa-sync fa-stack-1x fa-inverse spinner"></i></i>
         </span>
     </h1>
     <subtitle><span class="cuUpdated"></span><span class="cuSource">&nbsp;<a href="https://worldometers.info/coronavirus" target="_blank" title="worldometers.info/coronavirus">[source]</a></span></subtitle>
@@ -96,6 +96,15 @@
 
             });
         }
+        function updateDATA() {
+            $.getJSON(cases, function(data) {
+                    $('.cuCases').html(data.items[0].cases);
+                    $('.cuDead').html(data.items[0].dead);
+                    $('.cuRecovered').html(data.items[0].recovered);
+                    $('.cuUpdated').html(data.items[0].updated);
+                    $('.spinner').removeClass('fa-spin');
+            });             
+        }
         function switchLang(swahili) {
             if (swahili == true) {
                 $('.CovidUpdates > li:nth-child(1) .cuLabel').html("JUMLA YA WAGONJWA:");
@@ -117,6 +126,10 @@
         }
         $(document).ready(function(){
             fetchDATA();
+            var dataTimer = setInterval(function() {
+                $('.spinner').addClass('fa-spin');
+                updateDATA();
+            }, 60 * 1000);
             if(Cookies.get('site_lang') == "swahili") {
                 switchLang(true);
             }
