@@ -10,7 +10,6 @@ related: false
 layout: single_wide
 excerpt: Important COVID-19 Resources
 ---
-
 Resources on this page will be updated regularly. Keep checking back.
 {: .notice--info}
 
