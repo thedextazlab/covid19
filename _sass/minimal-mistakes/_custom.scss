@@ -169,6 +169,7 @@ body {
         width: 100%;
     } 
 }
+
 .greedy-nav .visible-links {
     height:0px;
     opacity:0;
@@ -247,6 +248,10 @@ updates note {
 }
 
 .darkmode {
+    transition: background 0.25s ease-in-out, color 0.25s ease-in-out;
     background: #000;
     color: #fff;
+}
+body, #footer {
+    transition: background 0.25s ease-in-out, color 0.25s ease-in-out;
 }
