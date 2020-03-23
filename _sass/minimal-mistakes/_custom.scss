@@ -95,19 +95,24 @@ updates subtitle {
     padding-top: 8px;
 }
 .emoji {
+    line-height: 1;
+    border: 3px solid #fff;
     left: -52px;
     position: relative;
-    box-shadow: 0 0 5px rgba(0,0,0,.25) inset;
+    box-shadow: 0 0 8px rgba(0,0,0,.15);
     text-indent: 0;
-    font-size: 16px;
+    font-size: 1em;
     height: 40px;
     border-radius: 50px;
-    background: #eee;
+    background: #fff;
     text-align: center;
-    padding: 8px;
+    padding: 4px 0;
     width: 40px;
     display: block;
     margin-bottom: -40px;
+    @include breakpoint($mobile-max) {
+        font-size:1.4em;
+      }
 }
 .h-indent {
     padding-left: 56px;
