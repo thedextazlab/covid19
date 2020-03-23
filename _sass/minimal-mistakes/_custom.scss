@@ -185,6 +185,9 @@ body {
 .greedy-nav__toggle:hover .navicon, .greedy-nav__toggle:hover .navicon:before, .greedy-nav__toggle:hover .navicon:after {
     background: #aaa;
 }
+.greedy-nav__toggle:before {
+    background: #222;
+}
 .cuInstructions p {
     padding-left: 60px;
 }
