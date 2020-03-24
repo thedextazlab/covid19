@@ -28,7 +28,7 @@
 {% endif %}
 
 <script>
-  /*if ('serviceWorker' in navigator) {
+  if ('serviceWorker' in navigator) {
      console.log("Will the service worker register?");
      navigator.serviceWorker.register('/service-worker.js')
        .then(function(reg){
@@ -36,7 +36,7 @@
       }).catch(function(err) {
          console.log("No it didn't. This happened:", err)
      });
-  }*/
+  }
  </script>
  
  <!-- Begin DigitalPUSH code -->
@@ -44,14 +44,12 @@
   var DGPkey = "TnpQd0xCWUtENDRKR3A3cWw5VVQ2SUMrZkdNMDZUODlIcEQ1UFhXbHl6ST0="; //mandatory
   var DGPnativerequest = "0";
   var DGPdelay = "0";
-  var DGPmtype = "overlay";
-  var DGPtheme = "616161";
-  var DGPtitle = "Don't miss it!";
-  var DGPmessage = "Allow notifications to receive COVID-19 updates";
+  var DGPmtype = "flying";
+  var DGPmessage = "Allow notifications to get COVID-19 updates";
   var DGPallowbutton = "ALLOW";
   var DGPrejectbutton = "No thanks";
-  var DGPinpageads = "1";
-</script>
-<script type="text/javascript" src="/assets/js/dp.js"></script>
+  var DGPinpageads = "0";
+  </script>
+  <script type="text/javascript" src="//cdn.digitalpush.org/lib.js"></script>
   <!-- End DigitalPUSH code -->
 
