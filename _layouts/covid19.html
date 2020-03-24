@@ -158,8 +158,8 @@
                 }
             });
             $('.refresher').click(function() {
-                $('.loader span').html("UPDATING");
-                fetchDATA();    
+                $('.spinner').addClass('fa-spin');
+                updateDATA();    
             });
             $('.darkswitch').click(function() {
                 if($('.darkswitch-toggle').hasClass("fa-moon")) {

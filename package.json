@@ -1,22 +1,22 @@
 {
-  "name": "minimal-mistakes",
+  "name": "covid19",
   "version": "4.19.1",
-  "description": "Minimal Mistakes 2 column Jekyll theme.",
+  "description": "COVID 19 - Jekyll Site.",
   "repository": {
     "type": "git",
-    "url": "git://github.com/mmistakes/minimal-mistakes.git"
+    "url": "git://github.com/thedextazlab/covid19.git"
   },
   "keywords": [
     "jekyll",
     "theme",
     "minimal"
   ],
-  "author": "Michael Rose",
+  "author": "David Kisamfu",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mmistakes/minimal-mistakes/issues"
+    "url": "https://github.com/thedextazlab/covid19/issues"
   },
-  "homepage": "https://mmistakes.github.io/minimal-mistakes/",
+  "homepage": "https://covid19.amsha.io/",
   "engines": {
     "node": ">= 0.10.0"
   },

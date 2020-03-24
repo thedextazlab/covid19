@@ -226,8 +226,11 @@ body {
     cursor: pointer;
     font-size: .25em;
 }
-    .refresher:hover, .darkswitch:hover {
+.refresher:hover, .darkswitch:hover {
         color: #777;
+}
+.refresher:visited, .darkswitch:visited {
+        color: #222;
 }
 
 .cuInstructions {
