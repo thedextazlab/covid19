@@ -1,8 +1,9 @@
-{   "short_name": "COVID-19",
+{
+    "short_name": "COVID-19",
     "name": "COVID-19 Updates",
     "theme_color": "#000",
     "background_color": "#fff",
-    "display": "standalone",
+    "display": "fullscreen",
     "icons": [
       {
         "src": "assets/icons/launcher-icon-1x.png",
@@ -31,4 +32,4 @@
       }
     ],
     "start_url": "/?utm_source=launcher"
-}
+  }
