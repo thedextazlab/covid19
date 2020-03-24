@@ -38,17 +38,15 @@
      });
   }
  </script>
-<!-- Begin DigitalPUSH code -->
-<script>
-  var DGPkey = "TnpQd0xCWUtENDRKR3A3cWw5VVQ2SUMrZkdNMDZUODlIcEQ1UFhXbHl6ST0="; //mandatory
-  var DGPnativerequest = "0";
-  var DGPdelay = "0";
-  var DGPmtype = "flying";
-  var DGPmessage = "Allow notifications to get COVID-19 updates";
-  var DGPallowbutton = "ALLOW";
-  var DGPrejectbutton = "No thanks";
-  var DGPinpageads = "0";
-  </script>
-  <script type="text/javascript" src="//cdn.digitalpush.org/lib.js"></script>
-  <!-- End DigitalPUSH code -->
-
+ <!--FoxPush Script-->
+<script type="text/javascript" data-cfasync="false"> 
+  var _foxpush = _foxpush || []; 
+  _foxpush.push(['_setDomain', 'covid19amshaio']); 
+  (function(){ 
+  var foxscript = document.createElement('script'); 
+  foxscript.src = '/foxpush_SDK.js'; 
+  foxscript.type = 'text/javascript'; 
+  foxscript.async = 'true'; 
+  var fox_s = document.getElementsByTagName('script')[0]; 
+  fox_s.parentNode.insertBefore(foxscript, fox_s);})(); 
+</script>
