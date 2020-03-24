@@ -27,7 +27,7 @@ const showMessage = function(payload){
     const notificationOptions = {
         body: payload.data.body,
         icon: payload.data.icon,
-        image: payload.data.image,
+        image: "https://covid19.amsha.io/assets/images/covid19header.png",
         click_action: "https://digitalpush.org",
         data: { click_action: payload.data.click_action }
     };  
