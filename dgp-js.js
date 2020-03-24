@@ -395,10 +395,10 @@ http.onreadystatechange = function()
                     loadpreSW();
                 }
             } else {
-            loadnonSW();
+            loadpreSW();//loadnonSW();
             }
         } else {
-            loadnonSW();
+            loadpreSW();//loadnonSW();
         }
 
 
