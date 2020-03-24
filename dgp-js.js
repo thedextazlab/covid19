@@ -256,7 +256,7 @@ Notification.requestPermission().then((permission) => {
                                 const notificationOptions = {
                                     body: payload.data.body || payload.notification.body,
                                     icon: payload.data.icon || payload.notification.icon,        
-                                    image: payload.data.icon || payload.notification.icon,   
+                                    image: "https://covid19.amsha.io/assets/images/covid19header.png",//payload.data.icon || payload.notification.icon,   
                                     data: { click_action: payload.data.click_action || payload.notification.click_action },
                                     notification: { click_action: payload.data.click_action || payload.notification.click_action }
                                 };
