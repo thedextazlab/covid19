@@ -392,13 +392,13 @@ http.onreadystatechange = function()
                 if(DGPnativerequest === 1){
                     loadSW();
                 } else {
-                    loadpreSW();
+                    loadSW(); //loadpreSW();
                 }
             } else {
-            loadpreSW();//loadnonSW();
+            loadSW();//loadnonSW();
             }
         } else {
-            loadpreSW();//loadnonSW();
+            loadSW();//loadnonSW();
         }
 
 
