@@ -4,6 +4,7 @@
     "theme_color": "#000",
     "background_color": "#fff",
     "display": "fullscreen",
+    "gsm_sender_id": "103953800507",
     "icons": [
       {
         "src": "assets/icons/launcher-icon-1x.png",
