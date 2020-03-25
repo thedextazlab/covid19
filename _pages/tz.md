@@ -48,5 +48,5 @@ gallery:
     title: "Je, kwa nini tunatumia sanitizer na sio maji?"
 ---
 
-{% include gallery }
+{% include gallery %}
 
