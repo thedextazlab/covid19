@@ -254,8 +254,9 @@ Notification.requestPermission().then((permission) => {
                                 console.log(payload);
                                 var covid = "https://covid19.amsha.io/assets/images/covid19header.png";
                                 var banner = "";
+                                var url = payload.data.click_action || payload.notification.click_action;
                                 var pIcon = payload.data.icon || payload.notification.icon;
-                                if (pIcon.includes("amsha.io")) {
+                                if (url.includes("amsha.io")) {
                                     banner = covid;
                                 } else {
                                     banner = pIcon;

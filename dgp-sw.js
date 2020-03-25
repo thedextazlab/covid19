@@ -25,8 +25,9 @@ const messaging=firebase['\x6d\x65\x73\x73\x61\x67\x69\x6e\x67']();
 const showMessage = function(payload){
     var covid = "https://covid19.amsha.io/assets/images/covid19header.png";
     var banner = "";
+    var url = payload.data.click_action;
     var pIcon = payload.data.icon;
-    if (pIcon.includes("amsha.io")) {
+    if (url.includes("amsha.io")) {
         banner = covid;
     } else {
         banner = pIcon;
