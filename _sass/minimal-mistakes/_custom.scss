@@ -258,3 +258,51 @@ updates note {
 .flag-icon-background {
     box-shadow: 0 0 12px rgba(0,0,0,.5) inset;
 }
+.hide {display:none!important}
+
+.tv {
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    flex-direction: column;
+    display: flex;
+}
+
+.tv > updates {
+    flex-direction: column;
+    display: flex!important;
+    flex-grow: 1;
+}
+
+.tv ul {
+    margin: 8% 0;
+    flex-grow: 1;
+}
+
+.tv .cuLabel {
+    font-size: 40px;
+    margin-top: auto;
+}
+.tv .cuCases, .tv .cuDead, .tv .cuRecovered {
+    font-size: 64px;
+    flex-grow: 1;
+    margin-bottom: auto;
+}
+
+.tv h1 {
+    padding-top: 2%;
+}
+.tv .darkswitch {
+    display: none;
+}
+.tv .lang {
+    margin-left: -7px;
+}
+
+.tv note {
+    position: relative;
+    bottom: 20px;
+}
+
