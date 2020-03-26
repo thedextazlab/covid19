@@ -305,4 +305,10 @@ updates note {
     position: relative;
     bottom: 20px;
 }
-
+.reset {
+    top: unset;
+    position: unset;
+}
+.countrydata {
+    display:none;
+}

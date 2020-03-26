@@ -7,6 +7,9 @@
     {% include head.html %}
     {% include head/custom.html %}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/css/flag-icon.min.css" integrity="sha256-YjcCvXkdRVOucibC9I4mBS41lXPrWfqY2BnpskhZPnw=" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
+
   <script>
       if(Cookies.get('darkmode') == "true") {
                     $('.darkswitch-toggle').removeClass("fa-moon").addClass("fa-sun");
@@ -76,6 +79,38 @@
     <h3 class="h-indent english"><span class="emoji">ℹ️</span>Stay aware of the latest information from WHO and your local authorities</h3>
     <h3 class="h-indent swahili"><span class="emoji">ℹ️</span>Fuatilia taarifa mpya zinazotolewa na Shirika la Afya Duniani (WHO) na mamlaka husika karibu nawe</h3>
     <p class="swahili"></p>
+    </section>
+    <section class="countrydata">
+        <table id="countries" class="countries">
+            <thead>
+                <tr>
+                    <th>Country,<br>Other</th>
+                    <th>Total<br>Cases</th>
+                    <th>New<br>Cases</th>
+                    <th>Total<br>Deaths</th>
+                    <th>New<br>Deaths</th>
+                    <th>Total<br>Recovered</th>
+                    <th>Active<br>Cases</th>
+                    <th>Serious,<br>Critical</th>
+                    <th>Total Cases/<br>1M pop</th>
+                    <th>Total Deaths/<br>1M pop</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <th>Country,<br>Other</th>
+                    <th>Total<br>Cases</th>
+                    <th>New<br>Cases</th>
+                    <th>Total<br>Deaths</th>
+                    <th>New<br>Deaths</th>
+                    <th>Total<br>Recovered</th>
+                    <th>Active<br>Cases</th>
+                    <th>Serious,<br>Critical</th>
+                    <th>Total Cases/<br>1M pop</th>
+                    <th>Total Deaths/<br>1M pop</th>
+                </tr>
+            </tfoot>
+        </table>
     </section>
     </div>
     </div>
