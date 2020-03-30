@@ -93,6 +93,7 @@
                     <th>Serious,<br>Critical</th>
                     <th>Total Cases/<br>1M pop</th>
                     <th>Total Deaths/<br>1M pop</th>
+                    <th>First<br>Case</th>
                 </tr>
             </thead>
             <tbody>
@@ -107,20 +108,22 @@
                     <td></td>
                     <td></td>
                     <td></td>
+                    <td></td>
                 </tr>
             </tbody>
             <tfoot>
                 <tr>
-                    <th>Country,<br>Other</th>
-                    <th>Total<br>Cases</th>
-                    <th>New<br>Cases</th>
-                    <th>Total<br>Deaths</th>
-                    <th>New<br>Deaths</th>
-                    <th>Total<br>Recovered</th>
-                    <th>Active<br>Cases</th>
-                    <th>Serious,<br>Critical</th>
-                    <th>Total Cases/<br>1M pop</th>
-                    <th>Total Deaths/<br>1M pop</th>
+                    <th>TOTAL: </th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
                 </tr>
             </tfoot>
         </table>
@@ -142,6 +145,86 @@
     </div>
     <script>
         var cases = "https://thedextazlab.herokuapp.com/users/1/web_requests/79/covid19.json";
+        var countries = "https://thedextazlab.herokuapp.com/users/1/web_requests/85/covid19.json";
+        var cData = {"data": [{}]};
+        function getCountries() {
+            cData.data.length = 0;
+            $.getJSON(countries, function(data) {
+                for(i = 0; i < data.items[0].country.length; i++) {
+                    cData.data.push({"country" : data.items[0].country[i], "total_cases" : data.items[0].total_cases[i], "new_cases": data.items[0].new_cases[i], "total_deaths": data.items[0].total_deaths[i], "new_deaths": data.items[0].new_deaths[i], "total_recovered": data.items[0].total_recovered[i], "active_cases": data.items[0].active_cases[i], "critical": data.items[0].critical[i], "cases_mil": data.items[0].cases_mil[i], "deaths_mil": data.items[0].deaths_mil[i], "first_case": data.items[0].first_case[i]});
+                }
+            loadTable();
+            
+            });
+
+        }
+
+        function loadTable() {
+        if ( $.fn.DataTable.isDataTable('#countries') ) {
+        $('#countries').DataTable().destroy();
+        }
+        $('#countries').DataTable( {
+            
+            "fixedHeader": true,
+            info: false,
+            paging: false,
+            "createdRow": function( row, data, dataIndex){
+                        if( data.new_cases !== ""){
+                            $('td', row).eq(2).addClass('yellowClass');
+                        }
+                        if( data.new_deaths !== ""){
+                            $('td', row).eq(4).addClass('redClass');
+                        }
+                    },
+            
+            order: [1,"desc"],
+            "scrollCollapse": true,
+            "scrollX": true,
+            data: cData.data,
+            "columns" : [
+                {"data" : "country"},
+                {"data": "total_cases"},
+                {"data": "new_cases"},
+                {"data": "total_deaths"},
+                {"data": "new_deaths"},
+                {"data": "total_recovered"},
+                {"data": "active_cases"},
+                {"data": "critical"},
+                {"data": "cases_mil"},
+                {"data": "deaths_mil"},
+                {"data": "first_case"}
+            ],
+            
+            "footerCallback": function ( row, data, start, end, display ) {
+                    var api = this.api(), data;
+        
+                    // Remove the formatting to get integer data for summation
+                    var intVal = function ( i ) {
+                        return typeof i === 'string' ?
+                            i.replace(/[\+,]/g, '')*1 :
+                            typeof i === 'number' ?
+                                i : 0;
+                    };
+                    // Get totals for each column
+                    total_cases = api.column( 1 ).data().reduce( function (a, b) {return intVal(a) + intVal(b);}, 0 );
+                    new_cases = api.column( 2 ).data().reduce( function (a, b) {return intVal(a) + intVal(b);}, 0 );
+                    total_deaths = api.column( 3 ).data().reduce( function (a, b) {return intVal(a) + intVal(b);}, 0 );          
+                    new_deaths = api.column( 4 ).data().reduce( function (a, b) {return intVal(a) + intVal(b);}, 0 );                
+                    total_recovered = api.column( 5 ).data().reduce( function (a, b) {return intVal(a) + intVal(b);}, 0 );                 
+                    active_cases = api.column( 6 ).data().reduce( function (a, b) {return intVal(a) + intVal(b);}, 0 );
+                    critical = api.column( 7 ).data().reduce( function (a, b) {return intVal(a) + intVal(b);}, 0 );
+                    // Update footer
+                    $( api.column( 1 ).footer() ).html(total_cases.toLocaleString("en-US"));
+                    $( api.column( 2 ).footer() ).html("+"+new_cases.toLocaleString("en-US")).addClass("yellowClass");
+                    $( api.column( 3 ).footer() ).html(total_deaths.toLocaleString("en-US"));
+                    $( api.column( 4 ).footer() ).html("+"+new_deaths.toLocaleString("en-US")).addClass("redClass");
+                    $( api.column( 5 ).footer() ).html(total_recovered.toLocaleString("en-US"));
+                    $( api.column( 6 ).footer() ).html(active_cases.toLocaleString("en-US"));
+                    $( api.column( 7 ).footer() ).html(critical.toLocaleString("en-US"));
+                }
+            
+            });
+        }
         function fetchDATA (){
             $('updates').removeClass("show").fadeOut(200, function() {
                 $('.loader').removeClass("loaded").fadeIn(200);
@@ -159,6 +242,7 @@
             });
         }
         function updateDATA() {
+            getCountries();
             $.getJSON(cases, function(data) {
                     $('.cuCases').html(data.items[0].cases);
                     $('.cuDead').html(data.items[0].dead);
