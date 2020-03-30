@@ -329,7 +329,8 @@
                 if($('.countrydata').hasClass("show")) {
                     $('.cuInstructions').fadeIn(200);
                     $('.countrydata').removeClass("show").fadeOut(200, function(){
-                        $('updates').fadeIn(500).addClass("show");    
+                        $('updates').fadeIn(500).addClass("show"); 
+                        $('.fixedHeader-floating').detach();   
                     });
 
                 } else {
