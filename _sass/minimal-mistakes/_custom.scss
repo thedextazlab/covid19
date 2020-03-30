@@ -341,3 +341,19 @@ updates note {
   }
 .darkmode tr, .darkmode thead {background:transparent!important}
 .countrydata td:nth-child(n+2) {text-align:right}
+.countries tfoot th{text-align:right;}
+
+.countrydata td:nth-child(2n+2) {
+    background:#f9f9f9;
+}
+
+.darkmode .countrydata td:nth-child(2n+2) {
+    background:#111;
+}
+
+
+.darkmode tfoot, .darkmode thead {background:transparent!important}
+
+.darkmode .countries {
+    background: #000;
+}
