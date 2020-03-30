@@ -359,8 +359,8 @@ updates note {
 }
 .fixedMobile {
     @include breakpoint($mobile-max) {
-        background: #000!important;
         padding-top: 110px!important;
       }
     
 }
+.darkmode .fixedMobile {background: #000!important;}
