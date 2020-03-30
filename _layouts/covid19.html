@@ -345,7 +345,7 @@
             });
             $(window).scroll(function(){
                 if($('.fixedHeader-floating').length > 1) {
-                $('.fixedHeader-floating').first().addClass("fixedMobile");
+                $('.fixedHeader-floating').eq(1).addClass("fixedMobile");
                 } else {
                     $('.fixedHeader-floating').removeClass("fixedMobile");
                 }
