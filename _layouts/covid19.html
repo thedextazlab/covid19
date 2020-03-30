@@ -319,15 +319,18 @@
                 }
             });
             $('.tableSwitch').click(function() {
-                if($('.countrydata').hasClass("show")) {
+                if($('.tableSwitch .set').hasClass("fa-th-list")) {
+                    $('.tableSwitch .set').removeClass("fa-th-list").addClass("fa-th-large");
+                } else {
                     $('.tableSwitch .set').removeClass("fa-th-large").addClass("fa-th-list");
+                }
+                if($('.countrydata').hasClass("show")) {
                     $('.cuInstructions').fadeIn(200);
                     $('.countrydata').removeClass("show").fadeOut(200, function(){
                         $('updates').fadeIn(500).addClass("show");    
                     });
 
                 } else {
-                    $('.tableSwitch .set').removeClass("fa-th-list").addClass("fa-th-large");
                     $('.cuInstructions').fadeOut(200);
                     $('updates').removeClass("show").fadeOut(200, function() {
                     $('.countrydata').fadeIn(500, function(){
