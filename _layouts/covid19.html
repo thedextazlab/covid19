@@ -116,7 +116,7 @@
             </tbody>
             <tfoot>
                 <tr>
-                    <th>TOTAL: </th>
+                    <th>TOTAL (Globally): </th>
                     <th></th>
                     <th></th>
                     <th></th>
@@ -179,6 +179,7 @@
             },
             info: false,
             paging: false,
+            deferRender: true,
             "createdRow": function( row, data, dataIndex){
                         if( data.new_cases !== ""){
                             $('td', row).eq(2).addClass('yellowClass');
