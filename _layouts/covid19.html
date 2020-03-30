@@ -342,11 +342,11 @@
                 }
             });
             $(window).scroll(function(){
-                $('.toggles').fadeOut();
+                $('.toggles').removeClass('show');
                 clearTimeout($.data(this, 'scrollTimer'));
                 $.data(this, 'scrollTimer', setTimeout(function() {
-                    $('.toggles').fadeIn();
-                }, 250));
+                    $('.toggles').addClass('show');
+                }, 1000));
                 var fixed = $('.fixedHeader-floating').filter(function() {
                     return $(this).css('top').indexOf('0px') > -1
                 })
