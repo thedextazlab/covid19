@@ -23,29 +23,28 @@
     {% include_cached skip-links.html %}
     {% include_cached browser-upgrade.html %}
     {% include_cached masthead.html %}
-
+    <span class="toggles">
+        <span class="darkswitch">
+            <i class="fa-stack fa-2x">
+            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="fas fa-moon fa-stack-1x fa-inverse darkswitch-toggle"></i></i>
+        </span>
+        <span class="lang">
+            <span class="flag-icon-background flag-icon-tz flag-icon-squared"></span>
+         </span>
+         <span class="tableSwitch">
+            <i class="fa-stack fa-2x">
+            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="fas fa-table fa-stack-1x fa-inverse"></i></i>
+        </span>
+        <span class="refresher">
+            <i class="fa-stack fa-2x">
+            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="fas fa-sync fa-stack-1x fa-inverse spinner"></i></i>
+        </span>
+    </span>
     <div class="initial-content">
     <div id="main" role="main" class="">
-        <span class="toggles">
-            <span class="darkswitch">
-                <i class="fa-stack fa-2x">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fas fa-moon fa-stack-1x fa-inverse darkswitch-toggle"></i></i>
-            </span>
-            <span class="lang">
-                <span class="flag-icon-background flag-icon-tz flag-icon-squared"></span>
-             </span>
-             <span class="tableSwitch">
-                <i class="fa-stack fa-2x">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fas fa-table fa-stack-1x fa-inverse"></i></i>
-            </span>
-            <span class="refresher">
-                <i class="fa-stack fa-2x">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fas fa-sync fa-stack-1x fa-inverse spinner"></i></i>
-            </span>
-        </span>
     <updates>
     <h1><span class="cuTitle">COVID-19 Updates</span></h1>
     <subtitle><span class="cuUpdated"></span><span class="cuSource">&nbsp;<a href="https://worldometers.info/coronavirus" target="_blank" title="worldometers.info/coronavirus">[source]</a></span></subtitle>
@@ -170,6 +169,10 @@
         $('#countries').DataTable( {
             
             "fixedHeader": true,
+            language: {
+            search: "_INPUT_",
+            searchPlaceholder: "Search..."
+            },
             info: false,
             paging: false,
             "createdRow": function( row, data, dataIndex){
@@ -285,6 +288,7 @@
                 switchLang(true);
             }
             $('.cuInstructions').fadeIn();
+            $('.toggles').addClass('show');
             $('.lang').click(function(){
                 if(Cookies.get('site_lang') == "swahili") {
                     Cookies.set('site_lang', 'english', { expires: 365 });
