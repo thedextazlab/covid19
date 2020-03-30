@@ -159,6 +159,7 @@
                     cData.data.push({"country" : data.items[0].country[i], "total_cases" : data.items[0].total_cases[i], "new_cases": data.items[0].new_cases[i], "total_deaths": data.items[0].total_deaths[i], "new_deaths": data.items[0].new_deaths[i], "total_recovered": data.items[0].total_recovered[i], "active_cases": data.items[0].active_cases[i], "critical": data.items[0].critical[i], "cases_mil": data.items[0].cases_mil[i], "deaths_mil": data.items[0].deaths_mil[i], "first_case": data.items[0].first_case[i]});
                 }
                 loadTable();
+                
             });
         }
 
@@ -234,10 +235,12 @@
                     $( api.column( 6 ).footer() ).html(active_cases.toLocaleString("en-US"));
                     $( api.column( 7 ).footer() ).html(critical.toLocaleString("en-US"));
                 }
+
             
             });
+            dTable.columns.adjust();
         }
-        getCountries();
+       
         function fetchDATA (){
             $('updates').removeClass("show").fadeOut(200, function() {
                 $('.loader').removeClass("loaded").fadeIn(200);
@@ -338,7 +341,7 @@
                     $('.cuInstructions').fadeOut(200);
                     $('updates').removeClass("show").fadeOut(200, function() {
                     $('.countrydata').fadeIn(500, function(){
-                    //getCountries();
+                        getCountries();
                     }).addClass("show");
                 });
                 }
