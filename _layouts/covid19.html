@@ -344,13 +344,12 @@
                 }
             });
             $(window).scroll(function(){
-                if($('.fixedHeader-floating').css("top") == "0px")
-                {
-                    $('.fixedHeader-floating').addClass("fixedMobile");
-
-                } else {
-                    $('.fixedHeader-floating').removeClass("fixedMobile");
-                }
+                var fixed = $('.fixedHeader-floating').filter(function() {
+                    return $(this).css('top').indexOf('0px') > -1
+                })
+                $('.fixedHeader-floating').removeClass("fixedMobile");
+                $(fixed).addClass("fixedMobile");
+                
             });
             $('body, #footer').css({"transition":"background 0.25s ease-in-out, color 0.25s ease-in-out"});
         });
