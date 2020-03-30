@@ -257,6 +257,7 @@
                     
 
             });
+            dTable.draw();
         }
         function updateDATA() {
             getCountries();
@@ -266,7 +267,8 @@
                     $('.cuRecovered').html(data.items[0].recovered);
                     $('.cuUpdated').html(data.items[0].updated);
                     $('.spinner').removeClass('fa-spin');
-            });             
+            });
+            dTable.draw();             
         }
         function switchLang(swahili) {
             if (swahili == true) {
