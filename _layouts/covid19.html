@@ -171,7 +171,7 @@
         dTable = $('#countries').DataTable( {
             
             fixedHeader: {
-                header: true,
+                header: false,
                 footer: false
             },
             responsive: true,
@@ -337,7 +337,6 @@
                     $('.cuInstructions').fadeIn(200);
                     $('.countrydata').removeClass("show").fadeOut(200, function(){
                         $('updates').fadeIn(500).addClass("show"); 
-                        $('.fixedHeader-floating').remove();   
                     });
 
                 } else {
