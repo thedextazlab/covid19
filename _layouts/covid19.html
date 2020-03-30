@@ -165,8 +165,8 @@
 
         function loadTable() {
         if ( $.fn.DataTable.isDataTable('#countries') ) {
-        $('#countries').DataTable().destroy();
-        }
+            dTable.clear().rows.add(cData.data).draw();
+        } else {
         dTable = $('#countries').DataTable( {
             
             fixedHeader: {
@@ -238,8 +238,7 @@
 
             
             });
-            dTable.draw();  
-            dTable.columns.adjust();
+            }
         }
        
         function fetchDATA (){
