@@ -119,7 +119,7 @@ updates subtitle {
     transition: opacity 1s ease-in-out;
 }
 .show {
-    opacity: 1;
+    opacity: 1!important;
     transition-delay: 0.5s;
     transition: opacity 1s ease-in-out;
 }
@@ -331,3 +331,12 @@ updates note {
 #countries tbody > tr > td:nth-child(1) {
     font-weight: bold;
 }
+.redClass {
+    color:#fff;
+    background:red;
+  }
+  .yellowClass {
+    color:#222;
+    background:yellow;
+  }
+  
