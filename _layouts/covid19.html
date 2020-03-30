@@ -35,7 +35,7 @@
          <span class="tableSwitch">
             <i class="fa-stack fa-2x">
             <i class="fas fa-circle fa-stack-2x"></i>
-            <i class="fas fa-table fa-stack-1x fa-inverse"></i></i>
+            <i class="fas set fa-th-list fa-stack-1x fa-inverse"></i></i>
         </span>
         <span class="refresher">
             <i class="fa-stack fa-2x">
@@ -321,15 +321,17 @@
             $('.tableSwitch').click(function() {
                 if($('.countrydata').hasClass("show")) {
                     $('.cuInstructions').fadeIn(200);
+                    $('.tableSwitch .set').removeClass("fa-th-list").addClass("fa-th-large");
                     $('.countrydata').removeClass("show").fadeOut(200, function(){
                         $('updates').fadeIn(500).addClass("show");    
                     });
 
                 } else {
+                    $('.tableSwitch .set').removeClass("fa-th-large").addClass("fa-th-list");
                     $('.cuInstructions').fadeOut(200);
                     $('updates').removeClass("show").fadeOut(200, function() {
                     $('.countrydata').fadeIn(500, function(){
-                        getCountries();
+                    getCountries();
                     }).addClass("show");
                 });
                 }
