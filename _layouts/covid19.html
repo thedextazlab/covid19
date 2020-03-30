@@ -344,9 +344,9 @@
                 }
             });
             $(window).scroll(function(){
-                if($('.fixedHeader-floating').css("top") == "0")
+                if($('.fixedHeader-floating').css("top") == "0px")
                 {
-                    $('.fixedHeader-floating').addClass("fixedMobile");
+                    $(this).addClass("fixedMobile");
 
                 } else {
                     $('.fixedHeader-floating').removeClass("fixedMobile");
