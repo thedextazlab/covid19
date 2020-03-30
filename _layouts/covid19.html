@@ -166,7 +166,7 @@
 
         function loadTable() {
         if ( $.fn.DataTable.isDataTable('#countries') ) {
-            dTable.clear().rows.add(cData.data).draw();
+            dTable.clear().rows.add(cData.data).draw().columns.adjust();
         } else {
         dTable = $('#countries').DataTable( {
             
