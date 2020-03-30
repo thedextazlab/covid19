@@ -357,6 +357,10 @@ updates note {
 .darkmode .countries {
     background: #000;
 }
-.bottom40 {
-    bottom: 40px;
+.fixedmobile {
+    top:0;
+    @include breakpoint($mobile-max) {
+        top:120px;
+      }
+    
 }
