@@ -358,9 +358,8 @@ updates note {
     background: #000;
 }
 .fixedMobile {
-    top:0;
     @include breakpoint($mobile-max) {
-        top:120px;
+        top:110px!important;
       }
     
 }
