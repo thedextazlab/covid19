@@ -235,6 +235,7 @@
                     $( api.column( 6 ).footer() ).html(active_cases.toLocaleString("en-US"));
                     $( api.column( 7 ).footer() ).html(critical.toLocaleString("en-US"));
                     $(api.table().footer()).addClass("hanging");
+                    $('.fixedHeader-floating').first().addClass("fixedMobile");
                 }
             
             });
