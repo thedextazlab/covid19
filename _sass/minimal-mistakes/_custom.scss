@@ -360,6 +360,8 @@ updates note {
 .fixedMobile {
     background:#f2f3f3!important;
     @include breakpoint($mobile-max) {
+        left:0!important;
+        right:0!important;
         background:#f2f3f3!important;
         padding-top: 110px!important;
       }
@@ -368,6 +370,8 @@ updates note {
 .darkmode .fixedMobile {
     background:#000!important;
     @include breakpoint($mobile-max) {
+        left:0!important;
+        right:0!important;
         background:#000!important;
         padding-top: 110px!important;
       }
