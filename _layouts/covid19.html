@@ -234,7 +234,6 @@
                     $( api.column( 5 ).footer() ).html(total_recovered.toLocaleString("en-US"));
                     $( api.column( 6 ).footer() ).html(active_cases.toLocaleString("en-US"));
                     $( api.column( 7 ).footer() ).html(critical.toLocaleString("en-US"));
-                    $(api.table().footer()).addClass("hanging");
                 }
             
             });
@@ -323,9 +322,7 @@
             $('.tableSwitch').click(function() {
                 if($('.tableSwitch .set').hasClass("fa-th-list")) {
                     $('.tableSwitch .set').removeClass("fa-th-list").addClass("fa-th-large");
-                    $('.scrollbutton').css({"bottom": $('.hanging').outerHeight() || "64px" });
                 } else {
-                    $('.scrollbutton').css({"bottom": "" });
                     $('.tableSwitch .set').removeClass("fa-th-large").addClass("fa-th-list");
                 }
                 if($('.countrydata').hasClass("show")) {
