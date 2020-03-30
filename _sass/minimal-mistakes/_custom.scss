@@ -357,7 +357,7 @@ updates note {
 .darkmode .countries {
     background: #000;
 }
-.fixedmobile {
+.fixedMobile {
     top:0;
     @include breakpoint($mobile-max) {
         top:120px;

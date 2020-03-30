@@ -235,7 +235,6 @@
                     $( api.column( 6 ).footer() ).html(active_cases.toLocaleString("en-US"));
                     $( api.column( 7 ).footer() ).html(critical.toLocaleString("en-US"));
                     $(api.table().footer()).addClass("hanging");
-                    $('.fixedHeader-floating').first().addClass("fixedMobile");
                 }
             
             });
@@ -343,8 +342,13 @@
                     }).addClass("show");
                 });
                 }
-            
-
+            });
+            $(window).scroll(function(){
+                if($('.fixedHeader-floating').length > 1) {
+                $('.fixedHeader-floating').first().addClass("fixedMobile");
+                } else {
+                    $('.fixedHeader-floating').removeClass("fixedMobile");
+                }
             });
             $('body, #footer').css({"transition":"background 0.25s ease-in-out, color 0.25s ease-in-out"});
         });
