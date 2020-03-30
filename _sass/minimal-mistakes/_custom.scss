@@ -339,4 +339,5 @@ updates note {
     color:#222;
     background:yellow;
   }
-  
+.darkmode tr, .darkmode thead {background:transparent!important}
+.countrydata td:nth-child(n+2) {text-align:right}
