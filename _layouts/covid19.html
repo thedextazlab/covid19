@@ -346,7 +346,7 @@
                 clearTimeout($.data(this, 'scrollTimer'));
                 $.data(this, 'scrollTimer', setTimeout(function() {
                     $('.toggles').addClass('show');
-                }, 1000));
+                }, 3000));
                 var fixed = $('.fixedHeader-floating').filter(function() {
                     return $(this).css('top').indexOf('0px') > -1
                 })
