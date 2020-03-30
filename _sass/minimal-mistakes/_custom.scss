@@ -134,13 +134,13 @@ updates subtitle {
     background: rgba(0,0,0,.75);
     color: #fff;
     cursor: pointer;
-    font-size: 56px;
+    font-size: 44px;
     display: none;
     position: fixed;
-    bottom: 8px;
+    bottom: 3px;
     right: 8px;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50px;
     z-index:99;
 }
@@ -196,7 +196,7 @@ body {
 .swahili {display:none;}
 .toggles {
     opacity:0;
-    border: 3px solid;
+    border: 3px solid #000;
     transition: opacity 0.5s ease-in-out;
     font-size: 1.563em;
     bottom:8px;
@@ -209,7 +209,7 @@ body {
     padding: 4px 0px 4px 12px;
     background: #ccc;
     @include breakpoint($mobile-max) {
-        
+        bottom:4px;
       }
 }
 .lang {
@@ -380,4 +380,14 @@ updates note {
 }
 .layout--covid19 #footer {
     padding-bottom: 30px;
+}
+.settings {
+    border-top: 2px solid;
+    z-index: 1;
+    background: #000;
+    height: 60px;
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
 }

@@ -147,6 +147,7 @@
         {% include_cached footer.html %}
       </footer>
     </div>
+    <div class="settings"></div>
     <script>
         var cases = "https://thedextazlab.herokuapp.com/users/1/web_requests/79/covid19.json";
         var countries = "https://thedextazlab.herokuapp.com/users/1/web_requests/85/covid19.json";
@@ -342,11 +343,6 @@
                 }
             });
             $(window).scroll(function(){
-                $('.toggles').removeClass('show');
-                clearTimeout($.data(this, 'scrollTimer'));
-                $.data(this, 'scrollTimer', setTimeout(function() {
-                    $('.toggles').addClass('show');
-                }, 3000));
                 var fixed = $('.fixedHeader-floating').filter(function() {
                     return $(this).css('top').indexOf('0px') > -1
                 })
