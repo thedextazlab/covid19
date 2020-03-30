@@ -1,13 +1,13 @@
 # main links
 main:
-- title: "Resources"
-  url: /resources/
-- title: "Charts"
-  url: /charts/
-- title: "Tanzania"
-  url: /tz/
 - title: "FAQs"
   url: /faq/
+- title: "Resources"
+  url: /resources/
+#- title: "Charts"
+#  url: /charts/
+#- title: "Tanzania"
+#  url: /tz/
   # - title: "Quick-Start Guide"
   #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
