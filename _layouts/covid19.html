@@ -297,6 +297,7 @@
             }
             $('.cuInstructions').fadeIn();
             $('.toggles').addClass('show');
+            $('.toggles, .scrollbutton').addClass('nohighlight');
             $('.lang').click(function(){
                 if(Cookies.get('site_lang') == "swahili") {
                     Cookies.set('site_lang', 'english', { expires: 365 });
