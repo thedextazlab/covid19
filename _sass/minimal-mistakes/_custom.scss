@@ -358,6 +358,7 @@ updates note {
     background: #000;
 }
 .fixedMobile {
+    background:#f2f3f3!important;
     @include breakpoint($mobile-max) {
         padding-top: 110px!important;
       }
