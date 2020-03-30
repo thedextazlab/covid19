@@ -158,8 +158,9 @@
                 for(i = 0; i < data.items[0].country.length; i++) {
                     cData.data.push({"country" : data.items[0].country[i], "total_cases" : data.items[0].total_cases[i], "new_cases": data.items[0].new_cases[i], "total_deaths": data.items[0].total_deaths[i], "new_deaths": data.items[0].new_deaths[i], "total_recovered": data.items[0].total_recovered[i], "active_cases": data.items[0].active_cases[i], "critical": data.items[0].critical[i], "cases_mil": data.items[0].cases_mil[i], "deaths_mil": data.items[0].deaths_mil[i], "first_case": data.items[0].first_case[i]});
                 }
-                loadTable();
                 
+                return cData.data;
+            
             });
         }
 
@@ -180,7 +181,7 @@
             },
             info: false,
             paging: false,
-            deferRender: false,
+            deferRender: true,
             "createdRow": function( row, data, dataIndex){
                         if( data.new_cases !== ""){
                             $('td', row).eq(2).addClass('yellowClass');
@@ -193,7 +194,7 @@
             order: [1,"desc"],
             "scrollCollapse": true,
             "scrollX": true,
-            data: cData.data,
+            data: getCountries(),
             "columns" : [
                 {"data" : "country"},
                 {"data": "total_cases"},
@@ -245,7 +246,7 @@
             $('updates').removeClass("show").fadeOut(200, function() {
                 $('.loader').removeClass("loaded").fadeIn(200);
             });
-            getCountries();
+            loadTable();
             $.getJSON(cases, function(data) {
                     $('.cuCases').html(data.items[0].cases);
                     $('.cuDead').html(data.items[0].dead);
@@ -260,7 +261,7 @@
            
         }
         function updateDATA() {
-            getCountries();
+            loadTable();
             $.getJSON(cases, function(data) {
                     $('.cuCases').html(data.items[0].cases);
                     $('.cuDead').html(data.items[0].dead);
@@ -343,7 +344,7 @@
                     $('.cuInstructions').fadeOut(200);
                     $('updates').removeClass("show").fadeOut(200, function() {
                     $('.countrydata').fadeIn(500, function(){
-                        getCountries();
+                        loadTable();
                     }).addClass("show");
                 });
                 }
