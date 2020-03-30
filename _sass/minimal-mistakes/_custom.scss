@@ -195,12 +195,15 @@ body {
 }
 .swahili {display:none;}
 .toggles {
-    box-shadow: 0 1px 2px rgba(0,0,0,.25) inset;
+    left: 5px;
+    z-index: 8;
+    bottom: 5px;
+    position: fixed;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.25) inset;
     display: flex;
     border-radius: 28px;
     padding: 4px 0px 4px 12px;
     background: #ccc;
-    float: right;
 }
 .lang {
     height: 36px;
@@ -221,15 +224,18 @@ body {
 .darkswitch {
     margin-left: -11px;
 }
-.refresher, .darkswitch {
+.tableSwitch {
+    margin-right:-4px;
+}
+.refresher, .darkswitch, .tableSwitch {
     color: #222;
     cursor: pointer;
     font-size: .25em;
 }
-.refresher:hover, .darkswitch:hover {
+.refresher:hover, .darkswitch:hover, .tableSwitch:hover {
         color: #777;
 }
-.refresher:visited, .darkswitch:visited {
+.refresher:visited, .darkswitch:visited, .tableSwitch:visited {
         color: #222;
 }
 
