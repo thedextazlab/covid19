@@ -168,7 +168,10 @@
         }
         $('#countries').DataTable( {
             
-            "fixedHeader": true,
+            fixedHeader: {
+                header: true,
+                footer: true
+            },
             language: {
             search: "_INPUT_",
             searchPlaceholder: "Search..."
@@ -333,6 +336,7 @@
         });
     </script>
     {% include scripts.html %}
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.20/js/jquery.dataTables.min.js" integrity="sha256-L4cf7m/cgC51e7BFPxQcKZcXryzSju7VYBKJLOKPHvQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables-fixedheader/2.1.1/dataTables.fixedHeader.min.js" integrity="sha256-KfJFtPOLGCpGuqzclWFBurt6TzJ9domiu3I+NyeNkqk=" crossorigin="anonymous"></script>
   </body>
 </html>
