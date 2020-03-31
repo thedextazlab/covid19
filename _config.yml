@@ -15,7 +15,7 @@
 minimal_mistakes_skin    : # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-build                    : 123
+build                    : 124
 locale                   : "en-US"
 title                    : "COVID-19"
 title_separator          : " - "

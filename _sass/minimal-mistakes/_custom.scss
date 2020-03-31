@@ -396,3 +396,18 @@ updates note {
     -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
     -webkit-tap-highlight-color: transparent;
     }
+#countries_filter {
+        left: 40%;
+        position: fixed;
+        top: 18px;
+        z-index: 999;
+}
+
+.stickTop {
+    position: sticky;
+    top:0;
+    @include breakpoint($mobile-max) {
+        position:fixed;
+      }
+
+}
