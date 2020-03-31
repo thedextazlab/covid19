@@ -324,7 +324,6 @@ updates note {
 }
 .countrydata {
     display:none;
-    margin-top:60px;
 }
 .countrydata .odd {
     background: #fafafa;
@@ -417,4 +416,11 @@ updates note {
     color:#fff!important;
     outline-style: none!important;
     outline-color:transparent!important;
+}
+.no-margins {
+    @include breakpoint($mobile-max) {
+    padding-right: 0!important;
+    padding-left: 0!important;
+      }
+    
 }
