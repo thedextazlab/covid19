@@ -166,10 +166,14 @@
             });
         }
 
-        function loadTable() {
-        if ( $.fn.DataTable.isDataTable('#countries') ) {
-            dTable.clear().rows.add(cData.data).draw().columns.adjust();
-        } else {
+        function loadTable(isTrue) {
+        if (isTrue == false) {
+
+            if ( $.fn.DataTable.isDataTable('#countries') ) {
+                dTable.clear().rows.add(cData.data).draw().columns.adjust();
+            }
+
+        }  else {
         dTable = $('#countries').DataTable( {
             
             fixedHeader: {
@@ -248,7 +252,7 @@
             $('updates').removeClass("show").fadeOut(200, function() {
                 $('.loader').removeClass("loaded").fadeIn(200);
             });
-            loadTable();
+            loadTable(false);
             $.getJSON(cases, function(data) {
                     $('.cuCases').html(data.items[0].cases);
                     $('.cuDead').html(data.items[0].dead);
@@ -263,8 +267,7 @@
            
         }
         function updateDATA() {
-            cData.data = getCountries();
-            loadTable();
+            loadTable(true);
             $.getJSON(cases, function(data) {
                     $('.cuCases').html(data.items[0].cases);
                     $('.cuDead').html(data.items[0].dead);
@@ -346,7 +349,7 @@
                     $('.cuInstructions').fadeOut(200);
                     $('updates').removeClass("show").fadeOut(200, function() {
                     $('.countrydata').fadeIn(500, function(){
-                        loadTable();
+                        loadTable(true);
                     }).addClass("show");
                 });
                 }
