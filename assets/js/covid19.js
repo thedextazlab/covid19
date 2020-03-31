@@ -31,10 +31,10 @@ var cases = "https://thedextazlab.herokuapp.com/users/1/web_requests/79/covid19.
             }   
         dTable = $('#countries').DataTable( {
             
-            fixedHeader: {
+            /*fixedHeader: {
                 header: false,
                 footer: false
-            },
+            },*/
             responsive: true,
             language: {
             search: "_INPUT_",
