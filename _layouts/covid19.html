@@ -192,6 +192,7 @@
             paging: false,
             deferRender: true,
             processing: true,
+            searchDelay: 300,
             "createdRow": function( row, data, dataIndex){
                         if( data.new_cases !== ""){
                             $('td', row).eq(2).addClass('yellowClass');
