@@ -164,7 +164,10 @@ var cases = "https://thedextazlab.herokuapp.com/users/1/web_requests/79/covid19.
                 $('.visible-links').addClass('nav-fadeIn');
                 $('.masthead').removeClass('stickTop');
                 $('#countries_filter').fadeOut();
-                $('#countries_filter input').addClass('').delay(1000).val("");
+                
+                setTimeout(function() {
+                    $('#countries_filter input').val("");
+                }, 2000);
                 window.scrollTo({top: 0});
             }
         }
@@ -179,7 +182,7 @@ var cases = "https://thedextazlab.herokuapp.com/users/1/web_requests/79/covid19.
                 switchLang(true);
             }
             $('.cuInstructions').fadeIn();
-            $('.toggles').addClass('pageLoaded').delay(3000).addClass('show');
+            setTimeout(function() {$('.toggles').addClass('show');}, 2000);
             $('.toggles, .scrollbutton').addClass('nohighlight');
             $('.lang').click(function(){
                 if(Cookies.get('site_lang') == "swahili") {
