@@ -19,7 +19,10 @@ var cases = "https://thedextazlab.herokuapp.com/users/1/web_requests/79/covid19.
         if (isTrue == false) {
 
             if ( $.fn.DataTable.isDataTable('#countries') ) {
-                dTable.clear().rows.add(getCountries()).draw().columns.adjust();
+                if(cData.data.length == 0) {
+                    cData.data = getCountries();
+                }
+                dTable.clear().rows.add(cData.data).draw().columns.adjust();
             }
 
         }  else {
