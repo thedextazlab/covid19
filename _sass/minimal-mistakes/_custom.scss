@@ -421,6 +421,8 @@ updates note {
     @include breakpoint($mobile-max) {
     padding-right: 0!important;
     padding-left: 0!important;
+    transition: all 0.3s ease-in-out;
       }
     
 }
+#main {transition: all 0.3s ease-in-out;}
