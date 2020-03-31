@@ -5,7 +5,7 @@ toc: false
 toc_label: "Contents"
 toc_icon: "file-alt"
 toc_sticky: true
-comments: false
+comments: true
 related: false
 layout: single_wide
 excerpt: COVID-19 - Special page for Tanzania
