@@ -302,7 +302,7 @@
                 switchLang(true);
             }
             $('.cuInstructions').fadeIn();
-            $('.toggles').addClass('show');
+            $('.toggles').delay(2000).addClass('show');
             $('.toggles, .scrollbutton').addClass('nohighlight');
             $('.lang').click(function(){
                 if(Cookies.get('site_lang') == "swahili") {
