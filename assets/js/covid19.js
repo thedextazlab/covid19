@@ -98,6 +98,33 @@ var cases = "https://thedextazlab.herokuapp.com/users/1/web_requests/79/covid19.
                     $( api.column( 5 ).footer() ).html(total_recovered.toLocaleString("en-US"));
                     $( api.column( 6 ).footer() ).html(active_cases.toLocaleString("en-US"));
                     $( api.column( 7 ).footer() ).html(critical.toLocaleString("en-US"));
+                },
+                "headerCallback": function ( row, data, start, end, display ) {
+                    var api = this.api();
+         
+                    // Remove the formatting to get integer data for summation
+                    var intVal = function ( i ) {
+                        return typeof i === 'string' ?
+                            i.replace(/[\+,]/g, '')*1 :
+                            typeof i === 'number' ?
+                                i : 0;
+                    };
+                    // Get totals for each column
+                    total_cases = api.column( 1 ).data().reduce( function (a, b) {return intVal(a) + intVal(b);}, 0 );
+                    new_cases = api.column( 2 ).data().reduce( function (a, b) {return intVal(a) + intVal(b);}, 0 );
+                    total_deaths = api.column( 3 ).data().reduce( function (a, b) {return intVal(a) + intVal(b);}, 0 );          
+                    new_deaths = api.column( 4 ).data().reduce( function (a, b) {return intVal(a) + intVal(b);}, 0 );                
+                    total_recovered = api.column( 5 ).data().reduce( function (a, b) {return intVal(a) + intVal(b);}, 0 );                 
+                    active_cases = api.column( 6 ).data().reduce( function (a, b) {return intVal(a) + intVal(b);}, 0 );
+                    critical = api.column( 7 ).data().reduce( function (a, b) {return intVal(a) + intVal(b);}, 0 );
+                    // Update header
+                    $( api.column( 1 ).header() ).html(total_cases.toLocaleString("en-US"));
+                    $( api.column( 2 ).header() ).html("+"+new_cases.toLocaleString("en-US")).addClass("yellowClass");
+                    $( api.column( 3 ).header() ).html(total_deaths.toLocaleString("en-US"));
+                    $( api.column( 4 ).header() ).html("+"+new_deaths.toLocaleString("en-US")).addClass("redClass");
+                    $( api.column( 5 ).header() ).html(total_recovered.toLocaleString("en-US"));
+                    $( api.column( 6 ).header() ).html(active_cases.toLocaleString("en-US"));
+                    $( api.column( 7 ).header() ).html(critical.toLocaleString("en-US"));
                 }
 
             
