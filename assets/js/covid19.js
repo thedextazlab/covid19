@@ -155,6 +155,7 @@ var cases = "https://thedextazlab.herokuapp.com/users/1/web_requests/79/covid19.
         }
         function CountriesStyling(isTrue){
             $('#countries_filter').insertBefore('.masthead');
+            $('#countries_filter input').addClass('transparent-search');
             if(isTrue == true) {
                 $('.visible-links').removeClass('nav-fadeIn');
                 $('.masthead').addClass('stickTop');
