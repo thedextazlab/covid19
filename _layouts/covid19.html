@@ -261,6 +261,7 @@
            
         }
         function updateDATA() {
+            cData.data = getCountries();
             loadTable();
             $.getJSON(cases, function(data) {
                     $('.cuCases').html(data.items[0].cases);
