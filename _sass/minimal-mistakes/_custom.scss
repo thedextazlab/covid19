@@ -412,7 +412,7 @@ updates note {
 
 }
 
-.transparent-search, .transparent-search::placeholder, .transparent-search:-ms-input-placeholder,  .transparent-search::-webkit-input-placeholder {
+.transparent-search, .transparent-search::placeholder {
     background:transparent!important;
     color:#fff!important;
     outline-style: none!important;
