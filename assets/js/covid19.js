@@ -151,10 +151,12 @@ var cases = "https://thedextazlab.herokuapp.com/users/1/web_requests/79/covid19.
             }
         }
         function CountriesStyling(isTrue){
-            $('#countries_filter').before('.masthead');
+            $('#countries_filter').insertBefore('.masthead');
             if(isTrue == true) {
+                $('.visible-links').removeClass('nav-fadeIn');
                 $('.masthead').addClass('stickTop');
             } else {
+                $('.visible-links').addClass('nav-fadeIn');
                 $('.masthead').removeClass('stickTop');
             }
         }
