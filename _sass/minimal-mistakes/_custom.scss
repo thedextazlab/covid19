@@ -411,3 +411,10 @@ updates note {
       }
 
 }
+
+#countries_filter input, #countries_filter input::placeholder, #countries_filter input:-ms-input-placeholder,  #countries_filter input::-webkit-input-placeholder {
+    background:transparent!important;
+    color:#fff!important;
+    outline-style: none!important;
+    outline-color:transparent!important;
+}
