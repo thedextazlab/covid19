@@ -1,4 +1,4 @@
-var cases = "https://thedextazlab.herokuapp.com/users/1/web_requests/79/covid19.json";
+        var cases = "https://thedextazlab.herokuapp.com/users/1/web_requests/79/covid19.json";
         var countries = "https://thedextazlab.herokuapp.com/users/1/web_requests/85/covid19.json";
         var cData = {"data": [{}]};
         var dTable = "";
@@ -8,7 +8,7 @@ var cases = "https://thedextazlab.herokuapp.com/users/1/web_requests/79/covid19.
             cData = cDataTemp;
             $.getJSON(countries, function(data) {
                 for(i = 0; i < data.items[0].country.length; i++) {
-                    cData.data.push({"country" : data.items[0].country[i], "total_cases" : data.items[0].total_cases[i], "new_cases": data.items[0].new_cases[i], "total_deaths": data.items[0].total_deaths[i], "new_deaths": data.items[0].new_deaths[i], "total_recovered": data.items[0].total_recovered[i], "active_cases": data.items[0].active_cases[i], "critical": data.items[0].critical[i], "cases_mil": data.items[0].cases_mil[i], "deaths_mil": data.items[0].deaths_mil[i], "first_case": data.items[0].first_case[i]});
+                    cData.data.push({"country" : data.items[0].country[i], "total_cases" : data.items[0].total_cases[i], "new_cases": data.items[0].new_cases[i], "total_deaths": data.items[0].total_deaths[i], "new_deaths": data.items[0].new_deaths[i], "total_recovered": data.items[0].total_recovered[i], "active_cases": data.items[0].active_cases[i], "critical": data.items[0].critical[i], "cases_mil": data.items[0].cases_mil[i], "deaths_mil": data.items[0].deaths_mil[i]});
                 }
                 
                 return cData.data;
@@ -68,8 +68,7 @@ var cases = "https://thedextazlab.herokuapp.com/users/1/web_requests/79/covid19.
                 {"data": "active_cases"},
                 {"data": "critical"},
                 {"data": "cases_mil"},
-                {"data": "deaths_mil"},
-                {"data": "first_case"}
+                {"data": "deaths_mil"}
             ],
             
             "footerCallback": function ( row, data, start, end, display ) {
