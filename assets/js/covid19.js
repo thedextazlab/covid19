@@ -56,7 +56,7 @@
             
             order: [1,"desc"],
             "scrollCollapse": true,
-            "scrollX": "100%",
+            //"scrollX": "100%",
             data: getCountries(),
             "columns" : [
                 {"data" : "country"},
@@ -171,6 +171,7 @@
             }
         }
         $(document).ready(function(){
+            $('#countries').wrap("<div class='scrolledTable'></div>")
             $('.settings').appendTo('#footer footer');
             fetchDATA();
             var dataTimer = setInterval(function() {
