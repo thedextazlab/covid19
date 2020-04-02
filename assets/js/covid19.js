@@ -238,5 +238,5 @@
                 $(fixed).addClass("fixedMobile");
                 
             });
-            $('body, #footer').css({"transition":"background 0.25s ease-in-out, color 0.25s ease-in-out"});
+            $('body, #footer').css({"transition":"all 0.25s ease-in-out"});
         });
