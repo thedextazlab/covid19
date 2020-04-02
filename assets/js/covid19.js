@@ -56,7 +56,7 @@
             
             order: [1,"desc"],
             "scrollCollapse": true,
-            "scrollX": true,
+            "scrollX": "100%",
             data: getCountries(),
             "columns" : [
                 {"data" : "country"},
