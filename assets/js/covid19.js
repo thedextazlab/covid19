@@ -81,22 +81,36 @@
                             typeof i === 'number' ?
                                 i : 0;
                     };
-                    // Get totals for each column
-                    total_cases = api.column( 1 ).data().reduce( function (a, b) {return intVal(a) + intVal(b);}, 0 );
-                    new_cases = api.column( 2 ).data().reduce( function (a, b) {return intVal(a) + intVal(b);}, 0 );
-                    total_deaths = api.column( 3 ).data().reduce( function (a, b) {return intVal(a) + intVal(b);}, 0 );          
-                    new_deaths = api.column( 4 ).data().reduce( function (a, b) {return intVal(a) + intVal(b);}, 0 );                
-                    total_recovered = api.column( 5 ).data().reduce( function (a, b) {return intVal(a) + intVal(b);}, 0 );                 
-                    active_cases = api.column( 6 ).data().reduce( function (a, b) {return intVal(a) + intVal(b);}, 0 );
-                    critical = api.column( 7 ).data().reduce( function (a, b) {return intVal(a) + intVal(b);}, 0 );
-                    // Update footer
-                    $( api.column( 1 ).footer() ).html(total_cases.toLocaleString("en-US"));
-                    $( api.column( 2 ).footer() ).html("+"+new_cases.toLocaleString("en-US")).addClass("yellowClass");
-                    $( api.column( 3 ).footer() ).html(total_deaths.toLocaleString("en-US"));
-                    $( api.column( 4 ).footer() ).html("+"+new_deaths.toLocaleString("en-US")).addClass("redClass");
-                    $( api.column( 5 ).footer() ).html(total_recovered.toLocaleString("en-US"));
-                    $( api.column( 6 ).footer() ).html(active_cases.toLocaleString("en-US"));
-                    $( api.column( 7 ).footer() ).html(critical.toLocaleString("en-US"));
+                    if(api.cell(0,0).data() == "World"){
+              
+                        api.columns().every(function(i) {
+                          
+                          this.footer().innerHTML = api.cell(0,i).data();
+                          
+                        });
+                        $(api.column(2).footer()).addClass("yellowClass");
+                        $(api.column(4).footer()).addClass("redClass");
+                        
+                        
+                      } else {
+                        // Get totals for each column
+                      total_cases = api.column( 1 ).data().reduce( function (a, b) {return intVal(a) + intVal(b);}, 0 );
+                      new_cases = api.column( 2 ).data().reduce( function (a, b) {return intVal(a) + intVal(b);}, 0 );
+                      total_deaths = api.column( 3 ).data().reduce( function (a, b) {return intVal(a) + intVal(b);}, 0 );          
+                      new_deaths = api.column( 4 ).data().reduce( function (a, b) {return intVal(a) + intVal(b);}, 0 );                
+                      total_recovered = api.column( 5 ).data().reduce( function (a, b) {return intVal(a) + intVal(b);}, 0 );                 
+                      active_cases = api.column( 6 ).data().reduce( function (a, b) {return intVal(a) + intVal(b);}, 0 );
+                      critical = api.column( 7 ).data().reduce( function (a, b) {return intVal(a) + intVal(b);}, 0 );
+                      // Update footer
+                      $( api.column( 1 ).footer() ).html(total_cases.toLocaleString("en-US"));
+                      $( api.column( 2 ).footer() ).html("+"+new_cases.toLocaleString("en-US")).addClass("yellowClass");
+                      $( api.column( 3 ).footer() ).html(total_deaths.toLocaleString("en-US"));
+                      $( api.column( 4 ).footer() ).html("+"+new_deaths.toLocaleString("en-US")).addClass("redClass");
+                      $( api.column( 5 ).footer() ).html(total_recovered.toLocaleString("en-US"));
+                      $( api.column( 6 ).footer() ).html(active_cases.toLocaleString("en-US"));
+                      $( api.column( 7 ).footer() ).html(critical.toLocaleString("en-US"));
+                        
+                      }
                 }
             });
             }
