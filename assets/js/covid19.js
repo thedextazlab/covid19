@@ -135,7 +135,7 @@
            
         }
         function updateDATA() {
-            loadTable(true);
+            //loadTable(true);
             $.getJSON(cases, function(data) {
                     $('.cuCases').html(data.items[0].cases);
                     $('.cuDead').html(data.items[0].dead);
