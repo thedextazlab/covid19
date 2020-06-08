@@ -120,7 +120,7 @@
             $('updates').removeClass("show").fadeOut(200, function() {
                 $('.loader').removeClass("loaded").fadeIn(200);
             });
-            loadTable(true);
+            //loadTable(true);
             $.getJSON(cases, function(data) {
                     $('.cuCases').html(data.items[0].cases);
                     $('.cuDead').html(data.items[0].dead);
@@ -185,7 +185,7 @@
             }
         }
         $(document).ready(function(){
-            $('#countries').wrap("<div class='scrolledTable'></div>")
+            //$('#countries').wrap("<div class='scrolledTable'></div>")
             $('.settings').appendTo('#footer footer');
             fetchDATA();
             var dataTimer = setInterval(function() {
@@ -222,7 +222,7 @@
                     Cookies.set('darkmode', 'false', { expires: 365 });
                 }
             });
-            $('.tableSwitch').click(function() {
+            /*$('.tableSwitch').click(function() {
                 if($('.tableSwitch .set').hasClass("fa-th-list")) {
                     $('.tableSwitch .set').removeClass("fa-th-list").addClass("fa-th-large");
                 } else {
@@ -244,7 +244,7 @@
                     }).addClass("show");
                 });
                 }
-            });
+            });*/
             $(window).scroll(function(){
                 var fixed = $('.fixedHeader-floating').filter(function() {
                     return $(this).css('top').indexOf('0px') > -1
