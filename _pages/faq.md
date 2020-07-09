@@ -126,7 +126,7 @@ If it is essential for you to have someone bring you supplies or to go out, e.g.
 
 **🤒 If you develop fever, cough and difficulty breathing, seek medical advice promptly as this may be due to a respiratory infection or other serious condition. Call in advance and tell your provider of any recent travel or contact with travelers.**
 
-*Why? * Calling in advance will allow your health care provider to quickly direct you to the right health facility. This will also help to prevent possible spread of COVID-19 and other viruses.
+*Why?* Calling in advance will allow your health care provider to quickly direct you to the right health facility. This will also help to prevent possible spread of COVID-19 and other viruses.
 
 ## What are the treatment options for COVID-19 (including drugs, vaccines, therapies)?
 **💊 Are antibiotics effective in preventing or treating COVID-19?**
