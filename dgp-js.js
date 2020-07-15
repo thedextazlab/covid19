@@ -18,7 +18,7 @@ if (DGPtitle === undefined || DGPtitle === null || DGPtitle == "") { var DGPtitl
 if (DGPmessage === undefined || DGPmessage === null || DGPmessage == "") { var DGPmessage = "Allow notifications to always stay up-to-date with the latest news"; }
 if (DGPallowbutton === undefined || DGPallowbutton === null || DGPallowbutton == "") { var DGPallowbutton = "ALLOW"; }
 if (DGPrejectbutton === undefined || DGPrejectbutton === null || DGPrejectbutton == "") { var DGPrejectbutton = "NO THANKS"; }
-if (DGPbgimage === undefined || DGPbgimage === null || DGPbgimage == "") { var DGPbgimage = "https://covid19.amsha.io/assets/icons/launcher-icon-4x.png?v={{ site.build }}"; }
+if (DGPbgimage === undefined || DGPbgimage === null || DGPbgimage == "") { var DGPbgimage = "https://covid19.thedextazlab.com/assets/icons/launcher-icon-4x.png?v={{ site.build }}"; }
 if (DGPdelay < 100) { DGPdelay = 100; }
 
 var DGPdmn = window.location.hostname;
@@ -252,11 +252,11 @@ Notification.requestPermission().then((permission) => {
                     
                             messaging.onMessage(function(payload) {
                                 console.log(payload);
-                                var covid = "https://covid19.amsha.io/assets/images/covid19header.png?v={{ site.build }}";
+                                var covid = "https://covid19.thedextazlab.com/assets/images/covid19header.png?v={{ site.build }}";
                                 var banner = "";
                                 var url = payload.data.click_action || payload.notification.click_action;
                                 var pIcon = payload.data.icon || payload.notification.icon;
-                                if (url.includes("amsha.io")) {
+                                if (url.includes("thedextazlab.com")) {
                                     banner = covid;
                                 } else {
                                     banner = pIcon;
