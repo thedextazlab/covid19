@@ -9,198 +9,170 @@ toc_sticky: false
 share: true
 ---
 
-WHO is continuously monitoring and responding to this outbreak. This page will be updated as more is known about COVID-19, how it spreads and how it is affecting people worldwide. 
-{: .notice--info}
+Latest update 10 November 2020 - WHO is continuously monitoring and responding to this pandemic. This Q&A will be updated as more is known about COVID-19, how it spreads and how it is affecting people worldwide. For more information, regularly check the WHO coronavirus pages. https://www.who.int/covid-19
 
-## What are coronaviruses, what is COVID-19 and how is it related to SARS?
-### What is a coronavirus?
-Coronaviruses are a large family of viruses which may cause illness in animals or humans. In humans, several coronaviruses are known to cause respiratory infections ranging from the common cold to more severe diseases such as Middle East Respiratory Syndrome (MERS) and Severe Acute Respiratory Syndrome (SARS). The most recently discovered coronavirus causes coronavirus disease COVID-19.
+[What is COVID-19?](#)
 
-### What is COVID-19?
-COVID-19 is the infectious disease caused by the most recently discovered coronavirus. This new virus and disease were unknown before the outbreak began in Wuhan, China, in December 2019.
+COVID-19 is the disease caused by a new coronavirus called SARS-CoV-2.  WHO first learned of this new virus on 31 December 2019, following a report of a cluster of cases of ‘viral pneumonia’ in Wuhan, People’s Republic of China.
 
-### Is COVID-19 the same as SARS?
-No. The virus that causes COVID-19 and the one that caused the outbreak of Severe Acute Respiratory Syndrome (SARS) in 2003 are related to each other genetically, but the diseases they cause are quite different. SARS was more deadly but much less infectious than COVID-19. There have been no outbreaks of SARS anywhere in the world since 2003.
+[What are the symptoms of COVID-19?](#)
 
-## What are the symptoms of COVID-19?
-The most common symptoms of COVID-19 are:
+The most common symptoms of COVID-19 are
 
-- 🤒 fever
-- 😴 tiredness
-- 💨 dry cough
+*   Fever
+*   Dry cough
+*   Fatigue
 
-Some patients may have aches and pains, nasal congestion, runny nose, sore throat or diarrhea. 
+Other symptoms that are less common and may affect some patients include:
 
-These symptoms are usually mild and begin gradually. Some people become infected but don’t develop any symptoms and don't feel unwell. 
+*   Loss of taste or smell,
+*   Nasal congestion,
+*   Conjunctivitis (also known as red eyes)
+*   Sore throat,
+*   Headache,
+*   Muscle or joint pain,
+*   Different types of skin rash,
+*   Nausea or vomiting,
+*   Diarrhea,
+*   Chills or dizziness.
 
-Most people (about 80%) recover from the disease without needing special treatment. Around 1 out of every 6 people who gets COVID-19 becomes seriously ill and develops difficulty breathing. 
+Symptoms of severe COVID‐19 disease include:
 
-Older people, and those with underlying medical problems like high blood pressure, heart problems or diabetes, are more likely to develop serious illness. 
+*   Shortness of breath,
+*   Loss of appetite,
+*   Confusion,
+*   Persistent pain or pressure in the chest,
+*   High temperature (above 38 °C).
 
-**People with fever, cough and difficulty breathing should seek medical attention.**
+Other less common symptoms are:
 
-## How does COVID-19 spread?
-🤧 People can catch COVID-19 from others who have the virus. 
+*   Irritability,
+*   Confusion,
+*   Reduced consciousness (sometimes associated with seizures),
+*   Anxiety,
+*   Depression,
+*   Sleep disorders,
+*   More severe and rare neurological complications such as strokes, brain inflammation, delirium and nerve damage.
 
-💦 The disease can spread from person to person through small droplets from the nose or mouth which are spread when a person with COVID-19 coughs or exhales. 
+People of all ages who experience fever and/or cough associated with difficulty breathing or shortness of breath, chest pain or pressure, or loss of speech or movement should seek medical care immediately. If possible, call your health care provider, hotline or health facility first, so you can be directed to the right clinic.
 
-🥄 These droplets land on objects and surfaces around the person. 
+[What happens to people who get COVID-19?](#)
 
-👈 Other people then catch COVID-19 by touching these objects or surfaces, then touching their eyes, nose or mouth. 
+Among those who develop symptoms, most (about 80%) recover from the disease without needing hospital treatment. About 15% become seriously ill and require oxygen and 5% become critically ill and need intensive care.
 
-↔ People can also catch COVID-19 if they breathe in droplets from a person with COVID-19 who coughs out or exhales droplets. This is why it is important to stay more than 1 meter (3 feet) away from a person who is sick.
+Complications leading to death may include respiratory failure, acute respiratory distress syndrome (ARDS), sepsis and septic shock, thromboembolism, and/or multiorgan failure, including injury of the heart, liver or kidneys.
 
-WHO is assessing ongoing research on the ways COVID-19 is spread and will continue to share updated findings.   
+In rare situations, children can develop a severe inflammatory syndrome a few weeks after infection. 
 
-### Can the virus that causes COVID-19 be transmitted through the air?
-Studies to date suggest that the virus that causes COVID-19 is mainly transmitted through contact with respiratory droplets rather than through the air. 
+[Who is most at risk of severe illness from COVID-19?](#)
 
-### Can COVID-19 be caught from a person who has no symptoms?
-The main way the disease spreads is through respiratory droplets expelled by someone who is coughing. The risk of catching COVID-19 from someone with no symptoms at all is very low. However, many people with COVID-19 experience only mild symptoms. This is particularly true at the early stages of the disease. It is therefore possible to catch COVID-19 from someone who has, for example, just a mild cough and does not feel ill.  
+People aged 60 years and over, and those with underlying medical problems like high blood pressure, heart and lung problems, diabetes, obesity or cancer, are at higher risk of developing serious illness. 
 
-WHO is assessing ongoing research on the period of transmission of COVID-19 and will continue to share updated findings.
+However, anyone can get sick with COVID-19 and become seriously ill or die at any age. 
 
-## Can I catch COVID-19 from feces, animals or pets?
-### 🚽 Can I catch COVID-19 from the feces of someone with the disease?
+[Are there long-term effects of COVID-19?](#)
 
-The risk of catching COVID-19 from the feces of an infected person appears to be low. While initial investigations suggest the virus may be present in feces in some cases, spread through this route is not a main feature of the outbreak. WHO is assessing ongoing research on the ways COVID-19 is spread and will continue to share new findings. Because this is a risk, however, it is another reason to clean hands regularly, after using the bathroom and before eating. 
+Some people who have had COVID-19, whether they have needed hospitalization or not, continue to experience symptoms, including fatigue, respiratory and neurological symptoms.  
 
-### 🐾 Can humans become infected with the COVID-19 from an animal source?
-Coronaviruses are a large family of viruses that are common in animals. Occasionally, people get infected with these viruses which may then spread to other people. For example, SARS-CoV was associated with civet cats and MERS-CoV is transmitted by dromedary camels. Possible animal sources of COVID-19 have not yet been confirmed.
+WHO is working with our Global Technical Network for Clinical Management of COVID-19, researchers and patient groups around the world to design and carry out studies of patients beyond the initial acute course of illness to understand the proportion of patients who have long term effects, how long they persist, and why they occur.  These studies will be used to develop further guidance for patient care.  
 
-To protect yourself, such as when visiting live animal markets, avoid direct contact with animals and surfaces in contact with animals. Ensure good food safety practices at all times. Handle raw meat, milk or animal organs with care to avoid contamination of uncooked foods and avoid consuming raw or undercooked animal products.
+[How can we protect others and ourselves if we don't know who is infected?](#)
 
-### 🐶 Can I catch COVID-19 from my pet?
-There is no evidence that a dog, cat or any pet can transmit COVID-19. COVID-19 is mainly spread through droplets produced when an infected person coughs, sneezes or speaks. To protect yourself clean your hands frequently and thoroughly.
+Stay safe by taking some simple precautions, such as physical distancing, wearing a mask, especially when distancing cannot be maintained, keeping rooms well ventilated, avoiding crowds and close contact, regularly cleaning your hands, and coughing into a bent elbow or tissue. Check local advice where you live and work. **Do it all!**  
 
-## Can I catch COVID-19 from infected surfaces or packages from infected areas?
-### 🥄 How long does the virus survive on surfaces?
+_Read our_ [_public advice page_](https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public) _for more information._ 
 
-It is not certain how long the virus that causes COVID-19 survives on surfaces, but it seems to behave like other coronaviruses. Studies suggest that coronaviruses (including preliminary information on the COVID-19 virus) may persist on surfaces for a few hours or up to several days. This may vary under different conditions (e.g. type of surface, temperature or humidity of the environment).
+  
 
-If you think a surface may be infected, clean it with simple disinfectant to kill the virus and protect yourself and others. Clean your hands with an alcohol-based hand rub or wash them with soap and water. Avoid touching your eyes, mouth, or nose.
+[When should I get a test for COVID-19?](#)
 
-### 📦 Is it safe to receive a package from any area where COVID-19 has been reported?
+Anyone with symptoms should be tested, wherever possible. People who do not have symptoms but have had close contact with someone who is, or may be, infected may also consider testing – contact your local health guidelines and follow their guidance.  
 
-Yes. The likelihood of an infected person contaminating commercial goods is low and the risk of catching the virus that causes COVID-19 from a package that has been moved, travelled, and exposed to different conditions and temperature is also low. 
+While a person is waiting for test results, they should remain isolated from others. Where testing capacity is limited, tests should first be done for those at higher risk of infection, such as health workers, and those at higher risk of severe illness such as older people, especially those living in seniors’ residences or long-term care facilities.
 
-## What can I do to protect myself and prevent the spread of disease?
-### Protection measures for everyone
+[What test should I get to see if I have COVID-19?](#)
 
-ℹ Stay aware of the latest information on the COVID-19 outbreak, available on the WHO website and through your national and local public health authority. Many countries around the world have seen cases of COVID-19 and several have seen outbreaks. Authorities in China and some other countries have succeeded in slowing or stopping their outbreaks. However, the situation is unpredictable so check regularly for the latest news.
+In most situations, a molecular test is used to detect SARS-CoV-2 and confirm infection. Polymerase chain reaction (PCR) is the most commonly used molecular test. Samples are collected from the nose and/or throat with a swab. Molecular tests detect virus in the sample by amplifying viral genetic material to detectable levels. For this reason, a molecular test is used to confirm an active infection, usually within a few days of exposure and around the time that symptoms may begin. 
 
-You can reduce your chances of being infected or spreading COVID-19 by taking some simple precautions:
+[Learn more about what kind of COVID-19 tests are available](https://www.who.int/emergencies/diseases/novel-coronavirus-2019/media-resources/science-in-5/episode-14---covid-19---tests)
 
-**🧼 Regularly and thoroughly clean your hands with an alcohol-based hand rub or wash them with soap and water.**
+[What about rapid tests?](#)
 
-*Why?* Washing your hands with soap and water or using alcohol-based hand rub kills viruses that may be on your hands.
+Rapid antigen tests (sometimes known as a rapid diagnostic test – RDT) detect viral proteins (known as antigens). Samples are collected from the nose and/or throat with a swab. These tests are cheaper than PCR and will offer results more quickly, although they are generally less accurate. These tests perform best when there is more virus circulating in the community and when sampled from an individual during the time they are most infectious. 
 
-**↔ Maintain at least 1 metre (3 feet) distance between yourself and anyone who is coughing or sneezing.**
+[I want to find out if I had COVID-19 in the past, what test could I take?](#)
 
-*Why?*  When someone coughs or sneezes they spray small liquid droplets from their nose or mouth which may contain virus. If you are too close, you can breathe in the droplets, including the COVID-19 virus if the person coughing has the disease.
+Antibody tests can tell us whether someone has had an infection in the past, even if they have not had symptoms. Also known as serological tests and usually done on a blood sample, these tests detect antibodies produced in response to an infection. In most people, antibodies start to develop after days to weeks and can indicate if a person has had past infection. Antibody tests cannot be used to diagnose COVID-19 in the early stages of infection or disease but can indicate whether or not someone has had the disease in the past.  
 
-**🚫 Avoid touching eyes, nose and mouth**
+[What is the difference between isolation and quarantine?](#)
 
-*Why?* Hands touch many surfaces and can pick up viruses. Once contaminated, hands can transfer the virus to your eyes, nose or mouth. From there, the virus can enter your body and can make you sick.
+Both isolation and quarantine are methods of preventing the spread of COVID-19.
 
-**🤧 Make sure you, and the people around you, follow good respiratory hygiene. This means covering your mouth and nose with your bent elbow or tissue when you cough or sneeze. Then dispose of the used tissue immediately.**
+**Quarantine** is used for anyone who is a contact of someone infected with the SARS-CoV-2 virus, which causes COVID-19, whether the infected person has symptoms or not. Quarantine means that you remain separated from others because you have been exposed to the virus and you may be infected and can take place in a designated facility or at home. For COVID-19, this means staying in the facility or at home for 14 days.
 
-*Why?* Droplets spread virus. By following good respiratory hygiene you protect the people around you from viruses such as cold, flu and COVID-19.
+**Isolation** is used for people with COVID-19 symptoms or who have tested positive for the virus. Being in isolation means being separated from other people, ideally in a medically facility where you can receive clinical care.  If isolation in a medical facility is not possible and you are not in a high risk group of developing severe disease, isolation can take place at home. If you have symptoms, you should remain in isolation for at least 10 days plus an additional 3 days without symptoms. If you are infected and do not develop symptoms, you should remain in isolation for 10 days from the time you test positive. 
 
-**🏠 Stay home if you feel unwell. If you have a fever, cough and difficulty breathing, seek medical attention and call in advance. Follow the directions of your local health authority.**
+![Isolation infographic_ENG](https://www.who.int/images/default-source/health-topics/coronavirus/isolation-infographic-eng.tmb-479v.jpg?sfvrsn=6d71d59b_9)
 
-*Why?* National and local authorities will have the most up to date information on the situation in your area. Calling in advance will allow your health care provider to quickly direct you to the right health facility. This will also protect you and help prevent spread of viruses and other infections.
+[What should I do if I have been exposed to someone who has COVID-19?](#)
 
-**🧳 Keep up to date on the latest COVID-19 hotspots (cities or local areas where COVID-19 is spreading widely). If possible, avoid traveling to places  – especially if you are an older person or have diabetes, heart or lung disease.**
+If you have been exposed to someone with COVID-19, you may become infected, even if you feel well.
 
-*Why?* You have a higher chance of catching COVID-19 in one of these areas.
+After exposure to someone who has COVID-19, do the following:
 
-## What should I do if I have visited an area where COVID-19 is spreading?
-If you have recently visited (past 14 days) areas where COVID-19 is spreading follow the guidance outlined in question 15. (What can I do to protect myself and prevent the spread of disease?) and do the following:
+*   Call your health care provider or COVID-19 hotline to find out where and when to get a test.
+*   Cooperate with contact-tracing procedures to stop the spread of the virus.
+*   If testing is not available, stay home and away from others for 14 days.
+*   While you are in quarantine, do not go to work, to school or to public places. Ask someone to bring you supplies.
+*   Keep at least a 1-metre distance from others, even from your family members.
+*   Wear a medical mask to protect others, including if/when you need to seek medical care.
+*   Clean your hands frequently.
+*   Stay in a separate room from other family members, and if not possible, wear a medical mask.
+*   Keep the room well-ventilated.
+*   If you share a room, place beds at least 1 metre apart.
+*   Monitor yourself for any symptoms for 14 days. 
+*   Stay positive by keeping in touch with loved ones by phone or online, and by [exercising at home](https://www.who.int/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub/q-a-detail/be-active-during-covid-19).
 
-**🏠 Self-isolate by staying at home if you begin to feel unwell, even with mild symptoms such as headache, low grade fever (37.3°C or above) and slight runny nose, until you recover.**
+If you live in an area with malaria or dengue fever, seek medical help if you have a fever. While travelling to and from the health facility and during medical care, wear a mask, keep at least a 1-metre distance from other people and avoid touching surfaces with your hands. This applies to adults and children. _Read our_ [_malaria and COVID-19 Q&A_](https://www.who.int/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub/q-a-detail/malaria-and-the-covid-19-pandemic) _for more information._ 
 
-If it is essential for you to have someone bring you supplies or to go out, e.g. to buy food, then wear a mask to avoid infecting other people.
+[How long does it take to develop symptoms?](#)
 
-*Why?* Avoiding contact with others and visits to medical facilities will allow these facilities to operate more effectively and help protect you and others from possible COVID-19 and other viruses.
+The time from exposure to COVID-19 to the moment when symptoms begin is, on average, 5-6 days and can range from 1-14 days. This is why people who have been exposed to the virus are advised to remain at home and stay away from others, for 14 days, in order to prevent the spread of the virus, especially where testing is not easily available.
 
-**🤒 If you develop fever, cough and difficulty breathing, seek medical advice promptly as this may be due to a respiratory infection or other serious condition. Call in advance and tell your provider of any recent travel or contact with travelers.**
+[Is there a vaccine for COVID-19?](#)
 
-*Why?* Calling in advance will allow your health care provider to quickly direct you to the right health facility. This will also help to prevent possible spread of COVID-19 and other viruses.
+Yes. There are three COVID-19 vaccines for which certain national regulatory authorities have authorized the use. None have yet received WHO EUL/PQ authorization but we expect an assessment on the Pfizer vaccine by the end of December and for some other candidates soon thereafter.   
 
-## What are the treatment options for COVID-19 (including drugs, vaccines, therapies)?
-**💊 Are antibiotics effective in preventing or treating COVID-19?**
+Large studies of 5 vaccine candidates efficacy and safety results, including these three (and for Moderna and AstraZeneca), have been publicly reported  through press releases but only one (AstraZeneca) has published results in the peer reviewed literature.  , We expect more such reports in the near future.  It is likely that additional candidates will be submitted to regulatory authorities for approval. There are [many potential COVID-19 vaccine candidates currently in development](https://www.who.int/publications/m/item/draft-landscape-of-covid-19-candidate-vaccines).
 
-No. Antibiotics do not work against viruses, they only work on bacterial infections. COVID-19 is caused by a virus, so antibiotics do not work. Antibiotics should not be used as a means of prevention or treatment of COVID-19. They should only be used as directed by a physician to treat a bacterial infection. 
+Once vaccines are demonstrated to be safe and efficacious, they must be approved by national regulators, manufactured to exacting standards, and distributed. WHO is working with partners around the world to help coordinate key steps in this process, including to facilitate equitable access to safe and effective COVID-19 vaccines for the billions of people who will need them. More information about COVID-19 vaccine development is available [here](https://www.who.int/emergencies/diseases/novel-coronavirus-2019/covid-19-vaccines).
 
-**🧪 Are there any medicines or therapies that can prevent or cure COVID-19?**
+[What should I do if I have COVID-19 symptoms?](#)
 
-While some western, traditional or home remedies may provide comfort and alleviate symptoms of COVID-19, there is no evidence that current medicine can prevent or cure the disease. WHO does not recommend self-medication with any medicines, including antibiotics, as a prevention or cure for COVID-19. However, there are several ongoing clinical trials that include both western and traditional medicines. WHO will continue to provide updated information as soon as clinical findings are available.
+If you have any symptoms suggestive of COVID-19, call your health care provider or COVID-19 hotline for instructions and find out when and where to get a test, stay at home for 14 days away from others and monitor your health.
 
-**💉 Is there a vaccine, drug or treatment for COVID-19?**
+If you have shortness of breath or pain or pressure in the chest, seek medical attention at a health facility immediately. Call your health care provider or hotline in advance for direction to the right health facility.
 
-Not yet. To date, there is no vaccine and no specific antiviral medicine to prevent or treat COVID-2019. However, those affected should receive care to relieve symptoms. People with serious illness should be hospitalized. Most patients recover thanks to supportive care.
+If you live in an area with malaria or dengue fever, seek medical care if you have a fever.
 
-Possible vaccines and some specific drug treatments are under investigation. They are being tested through clinical trials. WHO is coordinating efforts to develop vaccines and medicines to prevent and treat COVID-19.
+If local guidance recommends visiting a medical centre for testing, assessment or isolation, wear a medical mask while travelling to and from the facility and during medical care. Also keep at least a 1-metre distance from other people and avoid touching surfaces with your hands.  This applies to adults and children.
 
-The most effective ways to protect yourself and others against COVID-19 are to frequently clean your hands, cover your cough with the bend of elbow or tissue, and maintain a distance of at least 1 meter (3 feet) from people who are coughing or sneezing. 
+[Are there treatments for COVID-19?](#)
 
-## Should I wear a mask to protect myself?
-Only wear a mask if you are ill with COVID-19 symptoms (especially coughing) or looking after someone who may have COVID-19. Disposable face mask can only be used once. If you are not ill or looking after someone who is ill then you are wasting a mask. There is a world-wide shortage of masks, so WHO urges people to use masks wisely.
+Scientists around the world are working to find and develop treatments for COVID-19.
 
-WHO advises rational use of medical masks to avoid unnecessary wastage of precious resources and mis-use of masks.
+Optimal supportive care includes oxygen for severely ill patients and those who are at risk for severe disease and more advanced respiratory support such as ventilation for patients who are critically ill.
 
-The most effective ways to protect yourself and others against COVID-19 are to frequently clean your hands, cover your cough with the bend of elbow or tissue and maintain a distance of at least 1 meter (3 feet) from people who are coughing or sneezing. 
+Dexamethasone is a corticosteroid that can help reduce the length of time on a ventilator and save lives of patients with severe and critical illness. _Read our_ [_dexamethasone Q&A_](https://www.who.int/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub/q-a-detail/q-a-dexamethasone-and-covid-19) _for more information._  
 
-### 🚮 How to put on, use, take off and dispose of a mask?
+Results from the WHO’s Solidarity Trial [indicated](https://www.who.int/news/item/15-10-2020-solidarity-therapeutics-trial-produces-conclusive-evidence-on-the-effectiveness-of-repurposed-drugs-for-covid-19-in-record-time) that remdesivir, hydroxychloroquine, lopinavir/ritonavir and interferon regimens appear to have little or no effect on 28-day mortality or the in-hospital course of COVID-19 among hospitalized patients.
 
-1. Remember, a mask should only be used by health workers, care takers, and individuals with respiratory symptoms, such as fever and cough.
-2. Before touching the mask, clean hands with an alcohol-based hand rub or soap and water
-3. Take the mask and inspect it for tears or holes.
-4. Orient which side is the top side (where the metal strip is).
-5. Ensure the proper side of the mask faces outwards (the coloured side).
-6. Place the mask to your face. Pinch the metal strip or stiff edge of the mask so it moulds to the shape of your nose.
-7. Pull down the mask’s bottom so it covers your mouth and your chin.
-8. After use, take off the mask; remove the elastic loops from behind the ears while keeping the mask away from your face and clothes, to avoid touching potentially contaminated surfaces of the mask.
-9. Discard the mask in a closed bin immediately after use.
-10. Perform hand hygiene after touching or discarding the mask – Use alcohol-based hand rub or, if visibly soiled, wash your hands with soap and water.
+Hydroxychloroquine has not been shown to offer any benefit for treatment of COVID-19. _Read our_ [_hydroxychloroquine Q&A_](https://www.who.int/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub/q-a-detail/q-a-hydroxychloroquine-and-covid-19) _for more information._
 
-## Is there anything I should not do?
-The following measures ARE NOT effective against COVID-19 and can be harmful:
+WHO does not recommend self-medication with any medicines, including antibiotics, as a prevention or cure for COVID-19. WHO is coordinating efforts to develop treatments for COVID-19 and will continue to provide new information as it becomes available.
 
-- 🚭Smoking
-- 😷Wearing multiple masks
-- 💊Taking antibiotics
+[Are antibiotics effective in preventing or treating COVID-19?](#)
 
-In any case, if you have fever, cough and difficulty breathing seek medical care early to reduce the risk of developing a more severe infection and be sure to share your recent travel history with your health care provider.
+Antibiotics do not work against viruses; they only work on bacterial infections. COVID-19 is caused by a virus, so antibiotics do not work. Antibiotics should not be used as a means of prevention or treatment of COVID-19.
 
-## How do I cope with stress during COVID-19?
-📞 It is normal to feel sad, stressed, confused, scared or angry during a crisis. Talking to people you trust can help. Contact your friends and family.
-
-🥦  If you must stay at home, maintain a healthy lifestyle - including proper diet, sleep, exercise and social contacts with loved ones at home and by email and phone with other family and friends.
-
-🚭 Don’t use smoking, alcohol or other drugs to deal with your emotions. If you feel overwhelmed, talk to a health worker or counsellor. Have a plan, where to go to and how to seek help for physical and mental health needs if required.
-
-ℹ Get the facts. Gather information that will help you accurately determine your risk so that you can take reasonable precautions. Find a credible source you can trust such as WHO website or, a local or state public health agency.
-
-😭 Limit worry and agitation by lessening the time you and your family spend watching or listening to media coverage that you perceive as upsetting.
-
-⭐ Draw on skills you have used in the past that have helped you to manage previous life’s adversities and use those skills to help you manage your emotions during the challenging time of this outbreak.
-
-[PDF: Coping with Stress](/assets/docs/coping-with-stress.pdf){: .btn .btn--primary}
-
-
-## How do I help children cope with stress during COVID-19?
-🧒 Children may respond to stress in different ways such as being more clingy, anxious, withdrawing, angry or agitated, bedwetting etc. Respond to your child’s reactions in a supportive way, listen to their concerns and give them extra love and attention.
-
-💖 Children need adults’ love and attention during difficult times. Give them extra time and attention. Remember to listen to your children, speak kindly and reassure them. If possible, make opportunities for the child to play and relax.
-
-👪 Try and keep children close to their parents and family and avoid separating children and their caregivers to the extent possible. If separation occurs (e.g. hospitalization) ensure regular contact (e.g. via phone) and re-assurance.
-
-🪁 Keep to regular routines and schedules as much as possible, or help create new ones in a new environment, including school/learning as well as time for safely playing and relaxing.
-
-ℹ Provide facts about what has happened, explain what is going on now and give them clear information about how to reduce their risk of being infected by the disease in words that they can understand depending on their age. This also includes providing information about what could happen in a re-assuring way (e.g. a family member and/or the child may start not feeling well and may have to go to the hospital for some time so doctors can help them feel better).
-
-[PDF: Helping Children Cope with Stress](/assets/docs/helping-children-cope-with-stress-print.pdf){: .btn .btn--primary}
-
-Source: [WHO](https://www.who.int/news-room/q-a-detail/q-a-coronaviruses)
+In hospitals, physicians will sometimes use antibiotics to prevent or treat secondary bacterial infections which can be a complication of COVID-19 in severely ill patients. They should only be used as directed by a physician to treat a bacterial infection.
