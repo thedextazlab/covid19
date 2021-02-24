@@ -5,7 +5,7 @@ WHO:
   links:
       - label: "Website"
         icon: "fas fa-fw fa-link"
-        url: "https://www.who.int/emergencies/diseases/novel-coronavirus-2019"
+        url: "https://www.who.int/covid-19"
       - label: "Twitter"
         icon: "fab fa-fw fa-twitter-square"
         url: "https://twitter.com/who"

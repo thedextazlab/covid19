@@ -9,7 +9,7 @@ toc_sticky: false
 share: true
 ---
 
-Latest update 10 November 2020 - WHO is continuously monitoring and responding to this pandemic. This Q&A will be updated as more is known about COVID-19, how it spreads and how it is affecting people worldwide. For more information, regularly check the WHO coronavirus pages. https://www.who.int/covid-19 
+Latest update 10 November 2020 - WHO is continuously monitoring and responding to this pandemic. This Q&A will be updated as more is known about COVID-19, how it spreads and how it is affecting people worldwide. For more information, regularly check the WHO coronavirus pages.
 {: .notice--info}
 
 ## What is COVID-19?
